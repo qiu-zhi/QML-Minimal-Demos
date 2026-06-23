@@ -10,6 +10,14 @@ FadeInAnimation {
             title: "Text Markdown文本"
         }
 
+        Text {
+            text: "演示 Markdown 格式支持：粗体、斜体、删除线、无序列表、有序列表"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

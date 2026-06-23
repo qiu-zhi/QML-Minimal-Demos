@@ -10,6 +10,14 @@ FadeInAnimation {
             title: "Text 字体属性"
         }
 
+        Text {
+            text: "演示字体相关属性：font.family、font.pointSize、font.weight、font.letterSpacing、font.wordSpacing"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

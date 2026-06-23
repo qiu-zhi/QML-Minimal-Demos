@@ -10,6 +10,14 @@ FadeInAnimation {
             title: "Text 文本对齐"
         }
 
+        Text {
+            text: "演示文本对齐方式：horizontalAlignment（水平）和 verticalAlignment（垂直）"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

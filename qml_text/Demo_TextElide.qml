@@ -10,6 +10,14 @@ FadeInAnimation {
             title: "Text 文本省略"
         }
 
+        Text {
+            text: "演示文本省略模式：ElideRight（右侧省略）、ElideLeft（左侧省略）、ElideMiddle（中间省略）、多行省略"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

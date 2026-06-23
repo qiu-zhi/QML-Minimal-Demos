@@ -10,6 +10,14 @@ FadeInAnimation {
             title: "Text 基础用法"
         }
 
+        Text {
+            text: "演示 Text 组件的基本属性：纯文本显示、颜色、粗体、斜体、下划线、删除线"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

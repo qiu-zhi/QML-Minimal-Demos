@@ -10,6 +10,14 @@ FadeInAnimation {
             title: "可选择文本 (TextEdit)"
         }
 
+        Text {
+            text: "演示 TextEdit 组件：文本选择、只读模式、自定义选中颜色"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

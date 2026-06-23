@@ -11,6 +11,14 @@ FadeInAnimation {
             title: "Label 基础用法"
         }
 
+        Text {
+            text: "演示 Label 组件基础：自动继承应用字体、自定义字体大小、颜色、粗体斜体"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

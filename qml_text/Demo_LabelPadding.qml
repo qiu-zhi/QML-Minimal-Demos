@@ -11,6 +11,14 @@ FadeInAnimation {
             title: "Label 内边距控制"
         }
 
+        Text {
+            text: "演示 Label 的 padding 属性：统一内边距、top/bottom/left/rightPadding 独立控制"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

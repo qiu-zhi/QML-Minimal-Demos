@@ -10,6 +10,14 @@ FadeInAnimation {
             title: "Text 可点击文本"
         }
 
+        Text {
+            text: "演示交互式文本：点击变色、按下缩放、按钮样式、边框按钮"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

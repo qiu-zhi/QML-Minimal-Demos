@@ -10,6 +10,14 @@ FadeInAnimation {
             title: "Text 文本样式"
         }
 
+        Text {
+            text: "演示文本样式效果：Normal（默认）、Outline（轮廓）、Raised（凸起）、Sunken（凹陷）"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

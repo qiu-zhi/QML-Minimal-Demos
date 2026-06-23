@@ -11,6 +11,14 @@ FadeInAnimation {
             title: "Text vs Label 对比"
         }
 
+        Text {
+            text: "对比 Text 和 Label 组件：字体继承、背景支持、适用场景"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

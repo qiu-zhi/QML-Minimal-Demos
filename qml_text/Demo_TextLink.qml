@@ -10,6 +10,14 @@ FadeInAnimation {
             title: "Text 链接交互"
         }
 
+        Text {
+            text: "演示链接交互功能：linkActivated 信号、linkHovered 信号、hoveredLink 属性"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

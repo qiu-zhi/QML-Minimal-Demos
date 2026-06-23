@@ -10,6 +10,14 @@ FadeInAnimation {
             title: "Text 富文本 (HTML)"
         }
 
+        Text {
+            text: "演示 HTML 富文本格式：粗体、斜体、下划线、删除线、颜色、字号、标题段落"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

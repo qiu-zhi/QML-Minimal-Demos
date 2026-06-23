@@ -8,24 +8,29 @@ Item {
 
     opacity: 0
 
-    Behavior on opacity {
-        NumberAnimation {
-            duration: root.fadeInDuration
-            easing.type: root.fadeInEasingType
-        }
-    }
-
-    onVisibleChanged: {
-        if (visible) {
-            opacity = 0
-            opacity = 1
-        }
-    }
-
     default property alias content: contentContainer.data
 
     Item {
         id: contentContainer
         anchors.fill: parent
     }
+
+    states: [
+        State {
+            name: "visible"
+            when: root.visible
+            PropertyChanges { target: root; opacity: 1 }
+        }
+    ]
+
+    transitions: [
+        Transition {
+            from: ""; to: "visible"
+            NumberAnimation {
+                property: "opacity"
+                duration: root.fadeInDuration
+                easing.type: root.fadeInEasingType
+            }
+        }
+    ]
 }

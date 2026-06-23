@@ -1,4 +1,3 @@
-// qml_text/FadeInAnimation.qml
 import QtQuick
 
 Item {
@@ -16,8 +15,11 @@ Item {
         }
     }
 
-    Component.onCompleted: {
-        root.opacity = 1
+    onVisibleChanged: {
+        if (visible) {
+            opacity = 0
+            opacity = 1
+        }
     }
 
     default property alias content: contentContainer.data

@@ -11,6 +11,14 @@ FadeInAnimation {
             title: "Text 文本换行"
         }
 
+        Text {
+            text: "演示 wrapMode 属性：NoWrap（不换行）、WordWrap（单词边界换行）、Wrap（任意位置换行）"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+            width: parent.width - 40
+        }
+
         Column {
             anchors.left: parent.left
             anchors.leftMargin: 20

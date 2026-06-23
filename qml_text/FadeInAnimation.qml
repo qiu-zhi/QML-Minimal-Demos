@@ -20,10 +20,10 @@ Item {
         root.opacity = 1
     }
 
-    default property alias content: contentColumn.data
+    default property alias content: contentContainer.data
 
-    Column {
-        id: contentColumn
+    Item {
+        id: contentContainer
         anchors.fill: parent
     }
 }

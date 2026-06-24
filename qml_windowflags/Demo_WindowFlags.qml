@@ -182,26 +182,29 @@ Item {
             onPressed: framelessWindow.startSystemMove()
         }
 
-        // 关闭按钮
-        Button {
-            text: "✕"
+        // 关闭按钮 (使用 Rectangle 避免样式问题)
+        Rectangle {
             width: 30
             height: 30
             anchors.top: parent.top
             anchors.right: parent.right
             anchors.margins: 5
-            background: Rectangle {
-                color: parent.hovered ? "#E91E63" : "transparent"
-                radius: 4
-            }
-            contentItem: Text {
-                text: parent.text
+            color: closeArea.containsMouse ? "#E91E63" : "transparent"
+            radius: 4
+
+            Text {
+                anchors.centerIn: parent
+                text: "✕"
                 color: "white"
                 font.pointSize: 12
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
             }
-            onClicked: framelessWindow.close()
+
+            MouseArea {
+                id: closeArea
+                anchors.fill: parent
+                hoverEnabled: true
+                onClicked: framelessWindow.close()
+            }
         }
 
         ColumnLayout {

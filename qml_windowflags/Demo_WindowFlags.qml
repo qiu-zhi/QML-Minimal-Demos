@@ -99,13 +99,18 @@ Item {
         }
     }
 
-    // Qt.ToolTip: 提示窗口
+    // Qt.ToolTip: 提示窗口 (点击关闭)
     Window {
         id: tooltipWindow
         width: 250
         height: 100
         flags: Qt.ToolTip
         color: "#4CAF50"
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: tooltipWindow.close()
+        }
 
         ColumnLayout {
             anchors.fill: parent
@@ -120,7 +125,7 @@ Item {
             }
 
             Text {
-                text: "无边框浮动提示窗口"
+                text: "无边框浮动提示窗口\n点击任意位置关闭"
                 font.pointSize: 11
                 color: "white"
                 Layout.alignment: Qt.AlignHCenter
@@ -128,13 +133,18 @@ Item {
         }
     }
 
-    // Qt.SplashScreen: 启动画面
+    // Qt.SplashScreen: 启动画面 (点击关闭)
     Window {
         id: splashWindow
         width: 350
         height: 200
         flags: Qt.SplashScreen
         color: "#FF9800"
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: splashWindow.close()
+        }
 
         ColumnLayout {
             anchors.fill: parent
@@ -149,7 +159,7 @@ Item {
             }
 
             Text {
-                text: "无边框启动画面\n通常用于应用启动时显示"
+                text: "无边框启动画面\n点击任意位置关闭"
                 font.pointSize: 11
                 color: "white"
                 horizontalAlignment: Text.AlignHCenter
@@ -158,7 +168,7 @@ Item {
         }
     }
 
-    // Qt.FramelessWindowHint: 无边框窗口
+    // Qt.FramelessWindowHint: 无边框窗口 (拖拽移动 + 关闭按钮)
     Window {
         id: framelessWindow
         title: "无边框窗口"
@@ -170,6 +180,28 @@ Item {
         MouseArea {
             anchors.fill: parent
             onPressed: framelessWindow.startSystemMove()
+        }
+
+        // 关闭按钮
+        Button {
+            text: "✕"
+            width: 30
+            height: 30
+            anchors.top: parent.top
+            anchors.right: parent.right
+            anchors.margins: 5
+            background: Rectangle {
+                color: parent.hovered ? "#E91E63" : "transparent"
+                radius: 4
+            }
+            contentItem: Text {
+                text: parent.text
+                color: "white"
+                font.pointSize: 12
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
+            onClicked: framelessWindow.close()
         }
 
         ColumnLayout {

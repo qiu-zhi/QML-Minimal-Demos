@@ -21,7 +21,12 @@ qt_add_qml_module(appqml_windowflags
         Demo_PopupBasic.qml
         Demo_PopupDialog.qml
         Demo_PopupCustom.qml
-        Demo_WindowFlags.qml
+        Demo_WindowTool.qml
+        Demo_WindowToolTip.qml
+        Demo_WindowSplash.qml
+        Demo_WindowFrameless.qml
+        Demo_WindowStayOnTop.qml
+        Demo_WindowDialog.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

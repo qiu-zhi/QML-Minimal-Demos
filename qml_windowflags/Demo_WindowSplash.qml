@@ -9,67 +9,59 @@ Item {
         spacing: 15
 
         Text {
-            text: "自定义弹窗"
+            text: "Qt.SplashScreen - 启动画面"
             font.pointSize: 16
             font.bold: true
             color: "#333"
         }
 
         Text {
-            text: "通过 background 和 contentItem 完全自定义弹窗样式"
+            text: "演示 Qt.SplashScreen 标志位：无边框启动画面，点击任意位置关闭"
             font.pointSize: 10
             color: "#666"
             wrapMode: Text.WordWrap
         }
 
         Button {
-            text: "打开自定义弹窗"
-            onClicked: customPopup.open()
+            text: "打开 Qt.SplashScreen 窗口"
+            Layout.preferredWidth: 150
+            Layout.preferredHeight: 40
+            onClicked: splashWindow.visible = true
         }
 
         Item { Layout.fillHeight: true }
     }
 
-    Popup {
-        id: customPopup
-        parent: Overlay.overlay
-        x: (parent.width - width) / 2
-        y: (parent.height - height) / 2
-        width: 300
+    Window {
+        id: splashWindow
+        width: 350
         height: 200
-        modal: true
-        closePolicy: Popup.CloseOnEscape
+        flags: Qt.SplashScreen
+        color: "#FF9800"
 
-        background: Rectangle {
-            color: "#BCE6FF"
-            radius: 12
+        MouseArea {
+            anchors.fill: parent
+            onClicked: splashWindow.close()
         }
 
         ColumnLayout {
             anchors.fill: parent
             anchors.margins: 20
-            spacing: 15
 
             Text {
-                text: "自定义样式弹窗"
+                text: "Qt.SplashScreen"
                 font.pointSize: 14
                 font.bold: true
-                // color: "white"
+                color: "white"
                 Layout.alignment: Qt.AlignHCenter
             }
 
             Text {
-                text: "通过 background 属性\n可以完全自定义弹窗背景样式"
+                text: "无边框启动画面\n点击任意位置关闭"
                 font.pointSize: 11
-                // color: "white"
-                Layout.alignment: Qt.AlignHCenter
+                color: "white"
                 horizontalAlignment: Text.AlignHCenter
-            }
-
-            Button {
-                text: "关闭"
                 Layout.alignment: Qt.AlignHCenter
-                onClicked: customPopup.close()
             }
         }
     }

@@ -18,11 +18,32 @@ ApplicationWindow {
             id: navList
             Layout.preferredWidth: 160
             Layout.fillHeight: true
+            section.property: "category"
+            section.criteria: ViewSection.FullString
+            section.delegate: Rectangle {
+                width: parent ? parent.width : 160
+                height: 35
+                color: "#F5F7FA"
+                Text {
+                    x: 6
+                    anchors.verticalCenter: parent.verticalCenter
+                    text: section
+                    color: "#1296FF"
+                    font.pointSize: 12
+                    font.bold: true
+                }
+            }
             model: ListModel {
-                ListElement { name: "Popup 弹窗" }
-                ListElement { name: "Dialog 对话框" }
-                ListElement { name: "自定义弹窗" }
-                ListElement { name: "窗口标志位" }
+                ListElement { name: "Popup 弹窗"; category: "弹窗" }
+                ListElement { name: "Dialog 对话框"; category: "弹窗" }
+                ListElement { name: "自定义弹窗"; category: "弹窗" }
+
+                ListElement { name: "Qt.Tool"; category: "窗口标志位" }
+                ListElement { name: "Qt.ToolTip"; category: "窗口标志位" }
+                ListElement { name: "Qt.SplashScreen"; category: "窗口标志位" }
+                ListElement { name: "Qt.Frameless"; category: "窗口标志位" }
+                ListElement { name: "Qt.StayOnTop"; category: "窗口标志位" }
+                ListElement { name: "Qt.Dialog"; category: "窗口标志位" }
             }
 
             delegate: Rectangle {
@@ -56,10 +77,18 @@ ApplicationWindow {
             Layout.fillWidth: true
             Layout.fillHeight: true
 
+            // 弹窗
             Demo_PopupBasic {}
             Demo_PopupDialog {}
             Demo_PopupCustom {}
-            Demo_WindowFlags {}
+
+            // 窗口标志位
+            Demo_WindowTool {}
+            Demo_WindowToolTip {}
+            Demo_WindowSplash {}
+            Demo_WindowFrameless {}
+            Demo_WindowStayOnTop {}
+            Demo_WindowDialog {}
         }
     }
 }

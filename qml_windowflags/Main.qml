@@ -10,6 +10,29 @@ ApplicationWindow {
     title: "Window & Popup Demo"
     color: "#FFF"
 
+    // 顶部标题栏
+    header: ToolBar {
+        background: Rectangle { color: "#1976D2" }
+        Label {
+            text: "Window & Popup Demo"
+            color: "white"
+            font.pointSize: 14
+            font.bold: true
+            anchors.centerIn: parent
+        }
+    }
+
+    // 底部状态栏
+    footer: ToolBar {
+        background: Rectangle { color: "#f5f5f5"; border.color: "#ddd"; border.width: 1 }
+        Label {
+            text: "Qt 6 QML 示例"
+            color: "#666"
+            font.pointSize: 10
+            anchors.centerIn: parent
+        }
+    }
+
     RowLayout {
         anchors.fill: parent
 

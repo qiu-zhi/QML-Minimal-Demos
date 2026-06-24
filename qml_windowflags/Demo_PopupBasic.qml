@@ -10,13 +10,7 @@ Item {
 
         TitleSeparator {
             title: "Popup 弹窗"
-        }
-
-        Text {
-            text: "演示 Popup 组件的基本用法：轻量级弹出层，常用于菜单、提示"
-            font.pointSize: 10
-            color: "#666"
-            wrapMode: Text.WordWrap
+            description: "演示 Popup 组件的基本用法：轻量级弹出层，常用于菜单、提示"
         }
 
         Button {

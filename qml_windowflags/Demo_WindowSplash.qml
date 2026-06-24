@@ -10,13 +10,7 @@ Item {
 
         TitleSeparator {
             title: "Qt.SplashScreen - 启动画面"
-        }
-
-        Text {
-            text: "演示 Qt.SplashScreen 标志位：无边框启动画面，点击任意位置关闭"
-            font.pointSize: 10
-            color: "#666"
-            wrapMode: Text.WordWrap
+            description: "演示 Qt.SplashScreen 标志位：无边框启动画面，点击任意位置关闭"
         }
 
         Button {

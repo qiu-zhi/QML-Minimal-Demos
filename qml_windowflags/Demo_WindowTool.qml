@@ -10,13 +10,7 @@ Item {
 
         TitleSeparator {
             title: "Qt.Tool - 工具窗口"
-        }
-
-        Text {
-            text: "演示 Qt.Tool 标志位：窄标题栏工具窗口，任务栏不显示独立图标"
-            font.pointSize: 10
-            color: "#666"
-            wrapMode: Text.WordWrap
+            description: "演示 Qt.Tool 标志位：窄标题栏工具窗口，任务栏不显示独立图标"
         }
 
         Button {

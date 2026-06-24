@@ -10,13 +10,7 @@ Item {
 
         TitleSeparator {
             title: "Dialog 对话框"
-        }
-
-        Text {
-            text: "演示 Dialog 组件：标准对话框，支持模态和标准按钮（Ok/Cancel）"
-            font.pointSize: 10
-            color: "#666"
-            wrapMode: Text.WordWrap
+            description: "演示 Dialog 组件：标准对话框，支持模态和标准按钮（Ok/Cancel）"
         }
 
         Button {

@@ -10,13 +10,7 @@ Item {
 
         TitleSeparator {
             title: "Qt.WindowStaysOnTopHint - 置顶窗口"
-        }
-
-        Text {
-            text: "演示 Qt.WindowStaysOnTopHint 标志位：始终在最上层窗口，不会被其他窗口覆盖"
-            font.pointSize: 10
-            color: "#666"
-            wrapMode: Text.WordWrap
+            description: "演示 Qt.WindowStaysOnTopHint 标志位：始终在最上层窗口，不会被其他窗口覆盖"
         }
 
         Button {

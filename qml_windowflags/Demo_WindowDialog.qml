@@ -10,13 +10,7 @@ Item {
 
         TitleSeparator {
             title: "Qt.Dialog - 对话框窗口"
-        }
-
-        Text {
-            text: "演示 Qt.Dialog 标志位：对话框样式窗口，可模态或非模态"
-            font.pointSize: 10
-            color: "#666"
-            wrapMode: Text.WordWrap
+            description: "演示 Qt.Dialog 标志位：对话框样式窗口，可模态或非模态"
         }
 
         Button {

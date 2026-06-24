@@ -10,13 +10,7 @@ Item {
 
         TitleSeparator {
             title: "自定义弹窗"
-        }
-
-        Text {
-            text: "通过 background 和 contentItem 完全自定义弹窗样式"
-            font.pointSize: 10
-            color: "#666"
-            wrapMode: Text.WordWrap
+            description: "通过 background 和 contentItem 完全自定义弹窗样式"
         }
 
         Button {

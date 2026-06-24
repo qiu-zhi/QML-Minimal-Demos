@@ -10,13 +10,7 @@ Item {
 
         TitleSeparator {
             title: "Qt.ToolTip - 提示窗口"
-        }
-
-        Text {
-            text: "演示 Qt.ToolTip 标志位：无边框浮动提示窗口，点击任意位置关闭"
-            font.pointSize: 10
-            color: "#666"
-            wrapMode: Text.WordWrap
+            description: "演示 Qt.ToolTip 标志位：无边框浮动提示窗口，点击任意位置关闭"
         }
 
         Button {

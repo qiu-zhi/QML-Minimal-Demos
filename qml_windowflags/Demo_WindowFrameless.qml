@@ -10,13 +10,7 @@ Item {
 
         TitleSeparator {
             title: "Qt.FramelessWindowHint - 无边框窗口"
-        }
-
-        Text {
-            text: "演示 Qt.FramelessWindowHint 标志位：完全无边框窗口，拖拽任意位置可移动"
-            font.pointSize: 10
-            color: "#666"
-            wrapMode: Text.WordWrap
+            description: "演示 Qt.FramelessWindowHint 标志位：完全无边框窗口，拖拽任意位置可移动"
         }
 
         Button {

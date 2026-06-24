@@ -3,6 +3,7 @@ import QtQuick.Layouts
 
 ColumnLayout {
     property alias title: titleText.text
+    property alias description: descText.text
 
     width: parent.width
     spacing: 8
@@ -18,6 +19,14 @@ ColumnLayout {
         Layout.fillWidth: true
         height: 2
         color: "#1976D2"
+    }
+
+    Text {
+        id: descText
+        font.pointSize: 10
+        color: "#666"
+        wrapMode: Text.WordWrap
+        visible: text.length > 0
     }
 
     Item { height: 4 }

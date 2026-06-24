@@ -1,0 +1,76 @@
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+
+Item {
+    ColumnLayout {
+        anchors.fill: parent
+        anchors.margins: 20
+        spacing: 15
+
+        Text {
+            text: "自定义弹窗"
+            font.pointSize: 16
+            font.bold: true
+            color: "#333"
+        }
+
+        Text {
+            text: "通过 background 和 contentItem 完全自定义弹窗样式"
+            font.pointSize: 10
+            color: "#666"
+            wrapMode: Text.WordWrap
+        }
+
+        Button {
+            text: "打开自定义弹窗"
+            onClicked: customPopup.open()
+        }
+
+        Item { Layout.fillHeight: true }
+    }
+
+    Popup {
+        id: customPopup
+        parent: Overlay.overlay
+        x: (parent.width - width) / 2
+        y: (parent.height - height) / 2
+        width: 300
+        height: 200
+        modal: true
+        closePolicy: Popup.CloseOnEscape
+
+        background: Rectangle {
+            color: "#E91E63"
+            radius: 12
+        }
+
+        ColumnLayout {
+            anchors.fill: parent
+            anchors.margins: 20
+            spacing: 15
+
+            Text {
+                text: "自定义样式弹窗"
+                font.pointSize: 14
+                font.bold: true
+                color: "white"
+                Layout.alignment: Qt.AlignHCenter
+            }
+
+            Text {
+                text: "通过 background 属性\n可以完全自定义弹窗背景样式"
+                font.pointSize: 11
+                color: "white"
+                Layout.alignment: Qt.AlignHCenter
+                horizontalAlignment: Text.AlignHCenter
+            }
+
+            Button {
+                text: "关闭"
+                Layout.alignment: Qt.AlignHCenter
+                onClicked: customPopup.close()
+            }
+        }
+    }
+}

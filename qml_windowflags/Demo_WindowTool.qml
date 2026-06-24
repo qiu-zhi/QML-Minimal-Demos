@@ -8,11 +8,8 @@ Item {
         anchors.margins: 20
         spacing: 15
 
-        Text {
-            text: "Qt.Tool - 工具窗口"
-            font.pointSize: 16
-            font.bold: true
-            color: "#333"
+        TitleSeparator {
+            title: "Qt.Tool - 工具窗口"
         }
 
         Text {

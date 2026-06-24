@@ -8,11 +8,8 @@ Item {
         anchors.margins: 20
         spacing: 15
 
-        Text {
-            text: "Qt.SplashScreen - 启动画面"
-            font.pointSize: 16
-            font.bold: true
-            color: "#333"
+        TitleSeparator {
+            title: "Qt.SplashScreen - 启动画面"
         }
 
         Text {

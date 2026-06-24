@@ -8,11 +8,8 @@ Item {
         anchors.margins: 20
         spacing: 15
 
-        Text {
-            text: "自定义弹窗"
-            font.pointSize: 16
-            font.bold: true
-            color: "#333"
+        TitleSeparator {
+            title: "自定义弹窗"
         }
 
         Text {
@@ -24,6 +21,8 @@ Item {
 
         Button {
             text: "打开自定义弹窗"
+            Layout.preferredWidth: 150
+            Layout.preferredHeight: 40
             onClicked: customPopup.open()
         }
 
@@ -54,20 +53,20 @@ Item {
                 text: "自定义样式弹窗"
                 font.pointSize: 14
                 font.bold: true
-                // color: "white"
                 Layout.alignment: Qt.AlignHCenter
             }
 
             Text {
                 text: "通过 background 属性\n可以完全自定义弹窗背景样式"
                 font.pointSize: 11
-                // color: "white"
                 Layout.alignment: Qt.AlignHCenter
                 horizontalAlignment: Text.AlignHCenter
             }
 
             Button {
                 text: "关闭"
+                Layout.preferredWidth: 100
+                Layout.preferredHeight: 35
                 Layout.alignment: Qt.AlignHCenter
                 onClicked: customPopup.close()
             }

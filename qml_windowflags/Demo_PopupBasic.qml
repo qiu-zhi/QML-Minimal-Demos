@@ -8,11 +8,8 @@ Item {
         anchors.margins: 20
         spacing: 15
 
-        Text {
-            text: "Popup 弹窗"
-            font.pointSize: 16
-            font.bold: true
-            color: "#333"
+        TitleSeparator {
+            title: "Popup 弹窗"
         }
 
         Text {
@@ -24,6 +21,8 @@ Item {
 
         Button {
             text: "打开 Popup"
+            Layout.preferredWidth: 150
+            Layout.preferredHeight: 40
             onClicked: popup.open()
         }
 

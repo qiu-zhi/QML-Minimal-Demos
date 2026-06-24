@@ -49,4 +49,12 @@ A minimal QML example demonstrating text rendering with two basic animations: co
 
 ---
 
+## qml_windowflags
+
+A demo showcasing various window flags and popup components in Qt Quick. Includes Popup, Dialog, and custom popups, as well as window flag examples like Tool, ToolTip, SplashScreen, Frameless, StayOnTop, and Dialog.
+
+![QML Window Flags Demo](images/qml_windows.gif)
+
+---
+
 **To be continued...**

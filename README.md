@@ -1,3 +1,7 @@
+[English](README.md) | [中文](README.zh-CN.md)
+
+![QML-Minimal-Demos Banner](images/banner.png)
+
 # QML-Minimal-Demos
 A growing collection of runnable QML (Qt Quick) demos covering components, animations, layouts, charts, and particle   systems. Each example is minimal, verified, and ready to run with Qt 6.5+. Learning by doing, continuously expanding.
 
@@ -54,6 +58,14 @@ A minimal QML example demonstrating text rendering with two basic animations: co
 A demo showcasing various window flags and popup components in Qt Quick. Includes Popup, Dialog, and custom popups, as well as window flag examples like Tool, ToolTip, SplashScreen, Frameless, StayOnTop, and Dialog.
 
 ![QML Window Flags Demo](images/qml_windows.gif)
+
+---
+
+## qml_text
+
+A demo showcasing Text and Label components in Qt Quick. Includes examples for basic text properties, font settings, text styles, alignment, wrapping, eliding, rich text (HTML), Markdown, links, font auto-fit, clickable text, and text animations.
+
+![QML Text Demo](images/qml_text.gif)
 
 ---
 

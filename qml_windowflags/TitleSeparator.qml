@@ -18,7 +18,7 @@ ColumnLayout {
     Rectangle {
         Layout.fillWidth: true
         height: 2
-        color: "#1976D2"
+        color: "#1296FF"
     }
 
     Text {

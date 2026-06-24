@@ -19,6 +19,7 @@ qt_add_qml_module(appqml_windowflags
     QML_FILES
         Main.qml
         TitleSeparator.qml
+        FadeInAnimation.qml
         Demo_PopupBasic.qml
         Demo_PopupDialog.qml
         Demo_PopupCustom.qml

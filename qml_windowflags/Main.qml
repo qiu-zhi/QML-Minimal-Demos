@@ -13,14 +13,14 @@ ApplicationWindow {
     // 顶部标题栏
     header: ToolBar {
         implicitHeight: 50
-        leftPadding: 15
+        leftPadding: 20
         background: Rectangle {
             color: "#1296FF"
         }
         Label {
             text: "Window & Popup Demo"
             color: "white"
-            font.pointSize: 16
+            font.pointSize: 14
             font.bold: true
             anchors.verticalCenter: parent.verticalCenter
         }

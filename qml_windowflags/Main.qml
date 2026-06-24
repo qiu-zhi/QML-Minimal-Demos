@@ -12,13 +12,17 @@ ApplicationWindow {
 
     // 顶部标题栏
     header: ToolBar {
-        background: Rectangle { color: "#1976D2" }
+        implicitHeight: 50
+        leftPadding: 15
+        background: Rectangle {
+            color: "#1296FF"
+        }
         Label {
             text: "Window & Popup Demo"
             color: "white"
-            font.pointSize: 14
+            font.pointSize: 16
             font.bold: true
-            anchors.centerIn: parent
+            anchors.verticalCenter: parent.verticalCenter
         }
     }
 
@@ -26,7 +30,7 @@ ApplicationWindow {
     footer: ToolBar {
         background: Rectangle { color: "#f5f5f5"; border.color: "#ddd"; border.width: 1 }
         Label {
-            text: "Qt 6 QML 示例"
+            text: "Qt6 QML示例"
             color: "#666"
             font.pointSize: 10
             anchors.centerIn: parent

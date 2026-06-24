@@ -30,37 +30,43 @@ Item {
 
             Button {
                 text: "Qt.Tool"
-                Layout.fillWidth: true
+                Layout.preferredWidth: 150
+                Layout.preferredHeight: 40
                 onClicked: toolWindow.visible = true
             }
 
             Button {
                 text: "Qt.ToolTip"
-                Layout.fillWidth: true
+                Layout.preferredWidth: 150
+                Layout.preferredHeight: 40
                 onClicked: tooltipWindow.visible = true
             }
 
             Button {
                 text: "Qt.SplashScreen"
-                Layout.fillWidth: true
+                Layout.preferredWidth: 150
+                Layout.preferredHeight: 40
                 onClicked: splashWindow.visible = true
             }
 
             Button {
                 text: "Qt.Frameless"
-                Layout.fillWidth: true
+                Layout.preferredWidth: 150
+                Layout.preferredHeight: 40
                 onClicked: framelessWindow.visible = true
             }
 
             Button {
                 text: "Qt.StayOnTop"
-                Layout.fillWidth: true
+                Layout.preferredWidth: 150
+                Layout.preferredHeight: 40
                 onClicked: topWindow.visible = true
             }
 
             Button {
                 text: "Qt.Dialog"
-                Layout.fillWidth: true
+                Layout.preferredWidth: 150
+                Layout.preferredHeight: 40
                 onClicked: dialogWindow.visible = true
             }
         }

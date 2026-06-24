@@ -238,6 +238,31 @@ Item {
         flags: Qt.WindowStaysOnTopHint
         color: "#F44336"
 
+        // 关闭按钮
+        Rectangle {
+            width: 30
+            height: 30
+            anchors.top: parent.top
+            anchors.right: parent.right
+            anchors.margins: 5
+            color: topCloseArea.containsMouse ? "#E91E63" : "transparent"
+            radius: 4
+
+            Text {
+                anchors.centerIn: parent
+                text: "✕"
+                color: "white"
+                font.pointSize: 12
+            }
+
+            MouseArea {
+                id: topCloseArea
+                anchors.fill: parent
+                hoverEnabled: true
+                onClicked: topWindow.close()
+            }
+        }
+
         ColumnLayout {
             anchors.fill: parent
             anchors.margins: 15

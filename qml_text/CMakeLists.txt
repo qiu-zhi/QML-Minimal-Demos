@@ -9,17 +9,19 @@ find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
-qt_add_executable(appqml_text
+set(COMMON_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../common)
+
+qt_add_executable(qml_text
     main.cpp
 )
 
-qt_add_qml_module(appqml_text
+qt_add_qml_module(qml_text
     URI qml_text
     VERSION 1.0
     QML_FILES
         Main.qml
-        ../common/TitleSeparator.qml
-        ../common/FadeInAnimation.qml
+        ${COMMON_DIR}/TitleSeparator.qml
+        ${COMMON_DIR}/FadeInAnimation.qml
         Demo_TextBasic.qml
         Demo_TextFont.qml
         Demo_TextStyle.qml
@@ -37,23 +39,29 @@ qt_add_qml_module(appqml_text
         Demo_TextVsLabel.qml
 )
 
+set_source_files_properties(
+    ${COMMON_DIR}/TitleSeparator.qml
+    ${COMMON_DIR}/FadeInAnimation.qml
+    PROPERTIES QT_RESOURCE_ALIAS "/"
+)
+
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
-set_target_properties(appqml_text PROPERTIES
-#    MACOSX_BUNDLE_GUI_IDENTIFIER com.example.appqml_text
+set_target_properties(qml_text PROPERTIES
+#    MACOSX_BUNDLE_GUI_IDENTIFIER com.example.qml_text
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
 )
 
-target_link_libraries(appqml_text
+target_link_libraries(qml_text
     PRIVATE Qt6::Quick
 )
 
 include(GNUInstallDirs)
-install(TARGETS appqml_text
+install(TARGETS qml_text
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}

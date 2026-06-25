@@ -9,6 +9,8 @@ find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
+set(COMMON_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../common)
+
 qt_add_executable(appqml_windowflags
     main.cpp
 )
@@ -18,8 +20,8 @@ qt_add_qml_module(appqml_windowflags
     VERSION 1.0
     QML_FILES
         Main.qml
-        ../common/TitleSeparator.qml
-        ../common/FadeInAnimation.qml
+        ${COMMON_DIR}/TitleSeparator.qml
+        ${COMMON_DIR}/FadeInAnimation.qml
         Demo_PopupBasic.qml
         Demo_PopupDialog.qml
         Demo_PopupCustom.qml
@@ -29,6 +31,12 @@ qt_add_qml_module(appqml_windowflags
         Demo_WindowFrameless.qml
         Demo_WindowStayOnTop.qml
         Demo_WindowDialog.qml
+)
+
+set_source_files_properties(
+    ${COMMON_DIR}/TitleSeparator.qml
+    ${COMMON_DIR}/FadeInAnimation.qml
+    PROPERTIES QT_RESOURCE_ALIAS "/"
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

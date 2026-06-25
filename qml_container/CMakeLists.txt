@@ -9,6 +9,8 @@ find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
+set(COMMON_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../common)
+
 qt_add_executable(qml_container
     main.cpp
 )
@@ -18,14 +20,20 @@ qt_add_qml_module(qml_container
     VERSION 1.0
     QML_FILES
         Main.qml
-        ../common/TitleSeparator.qml
-        ../common/FadeInAnimation.qml
+        ${COMMON_DIR}/TitleSeparator.qml
+        ${COMMON_DIR}/FadeInAnimation.qml
         Demo_Pane.qml
         Demo_Frame.qml
         Demo_GroupBox.qml
         Demo_CustomGroupBox.qml
         Demo_ScrollView.qml
         Demo_Nested.qml
+)
+
+set_source_files_properties(
+    ${COMMON_DIR}/TitleSeparator.qml
+    ${COMMON_DIR}/FadeInAnimation.qml
+    PROPERTIES QT_RESOURCE_ALIAS "/"
 )
 
 set_target_properties(qml_container PROPERTIES

@@ -18,8 +18,8 @@ qt_add_qml_module(appqml_container
     VERSION 1.0
     QML_FILES
         Main.qml
-        TitleSeparator.qml
-        FadeInAnimation.qml
+        ../common/TitleSeparator.qml
+        ../common/FadeInAnimation.qml
         Demo_Pane.qml
         Demo_Frame.qml
         Demo_GroupBox.qml

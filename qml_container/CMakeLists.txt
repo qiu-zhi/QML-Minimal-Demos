@@ -5,15 +5,15 @@ project(qml_container VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2)
+find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
-qt_add_executable(appqml_container
+qt_add_executable(qml_container
     main.cpp
 )
 
-qt_add_qml_module(appqml_container
+qt_add_qml_module(qml_container
     URI qml_container
     VERSION 1.0
     QML_FILES
@@ -28,19 +28,19 @@ qt_add_qml_module(appqml_container
         Demo_Nested.qml
 )
 
-set_target_properties(appqml_container PROPERTIES
+set_target_properties(qml_container PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
 )
 
-target_link_libraries(appqml_container
-    PRIVATE Qt6::Quick Qt6::QuickControls2
+target_link_libraries(qml_container
+    PRIVATE Qt6::Quick
 )
 
 include(GNUInstallDirs)
-install(TARGETS appqml_container
+install(TARGETS qml_container
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}

@@ -80,3 +80,7 @@ CMakeLists.txt.user*
 .rcc/
 .uic/
 /build*/
+
+# Auto-copied from common/
+TitleSeparator.qml
+FadeInAnimation.qml

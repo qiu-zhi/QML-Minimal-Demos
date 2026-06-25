@@ -9,7 +9,11 @@ find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
+# 构建时自动从 common 复制共享组件到当前目录
 set(COMMON_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../common)
+foreach(_file TitleSeparator.qml FadeInAnimation.qml)
+    configure_file(${COMMON_DIR}/${_file} ${CMAKE_CURRENT_SOURCE_DIR}/${_file} COPYONLY)
+endforeach()
 
 qt_add_executable(qml_text
     main.cpp
@@ -20,8 +24,8 @@ qt_add_qml_module(qml_text
     VERSION 1.0
     QML_FILES
         Main.qml
-        ${COMMON_DIR}/TitleSeparator.qml
-        ${COMMON_DIR}/FadeInAnimation.qml
+        TitleSeparator.qml
+        FadeInAnimation.qml
         Demo_TextBasic.qml
         Demo_TextFont.qml
         Demo_TextStyle.qml
@@ -38,10 +42,6 @@ qt_add_qml_module(qml_text
         Demo_LabelPadding.qml
         Demo_TextVsLabel.qml
 )
-
-foreach(_file TitleSeparator.qml FadeInAnimation.qml)
-    set_source_files_properties(${COMMON_DIR}/${_file} PROPERTIES QT_RESOURCE_ALIAS ${_file})
-endforeach()
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

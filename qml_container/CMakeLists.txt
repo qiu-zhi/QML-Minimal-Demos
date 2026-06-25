@@ -9,19 +9,23 @@ find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
+# 构建时自动从 common 复制共享组件到当前目录
 set(COMMON_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../common)
+foreach(_file TitleSeparator.qml FadeInAnimation.qml)
+    configure_file(${COMMON_DIR}/${_file} ${CMAKE_CURRENT_SOURCE_DIR}/${_file} COPYONLY)
+endforeach()
 
-qt_add_executable(qml_container
+qt_add_executable(appqml_container
     main.cpp
 )
 
-qt_add_qml_module(qml_container
+qt_add_qml_module(appqml_container
     URI qml_container
     VERSION 1.0
     QML_FILES
         Main.qml
-        ${COMMON_DIR}/TitleSeparator.qml
-        ${COMMON_DIR}/FadeInAnimation.qml
+        TitleSeparator.qml
+        FadeInAnimation.qml
         Demo_Pane.qml
         Demo_Frame.qml
         Demo_GroupBox.qml
@@ -30,23 +34,19 @@ qt_add_qml_module(qml_container
         Demo_Nested.qml
 )
 
-foreach(_file TitleSeparator.qml FadeInAnimation.qml)
-    set_source_files_properties(${COMMON_DIR}/${_file} PROPERTIES QT_RESOURCE_ALIAS ${_file})
-endforeach()
-
-set_target_properties(qml_container PROPERTIES
+set_target_properties(appqml_container PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
     MACOSX_BUNDLE TRUE
     WIN32_EXECUTABLE TRUE
 )
 
-target_link_libraries(qml_container
+target_link_libraries(appqml_container
     PRIVATE Qt6::Quick
 )
 
 include(GNUInstallDirs)
-install(TARGETS qml_container
+install(TARGETS appqml_container
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}

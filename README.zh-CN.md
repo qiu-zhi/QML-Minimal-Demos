@@ -64,7 +64,7 @@ AI 生成的 QML 代码常出现两类问题：
 
 ## qml_text
 
-演示 Qt Quick 中的 Text 和 Label 组件。包含基础文本属性、字体设置、文本样式、对齐、换行、省略、富文本(HTML)、Markdown、链接交互、字体自适应、可点击文本和文本动画等示例。
+演示 Qt Quick 中的 Text 和 Label 组件。包含基础文本属性、字体设置、文本样式、对齐、换行、省略、富文本(HTML)、Markdown、链接交互、字体自适应和可点击文本等示例。
 
 ![QML Text Demo](images/qml_text.gif)
 

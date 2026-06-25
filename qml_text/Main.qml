@@ -10,6 +10,17 @@ ApplicationWindow {
     title: "Text & Label Demo"
     color: "#FFF"
 
+    Timer {
+        id: autoSwitchTimer
+        interval: 1000
+        repeat: true
+        onTriggered: {
+            var next = (contentStack.currentIndex + 1) % contentStack.count
+            contentStack.currentIndex = next
+            navList.currentIndex = next
+        }
+    }
+
     // 顶部标题栏
     header: ToolBar {
         implicitHeight: 50
@@ -72,7 +83,6 @@ ApplicationWindow {
                 ListElement { name: "链接交互"; category: "Text组件" }
                 ListElement { name: "字体自适应"; category: "Text组件" }
                 ListElement { name: "可点击文本"; category: "Text组件" }
-                ListElement { name: "文本动画"; category: "Text组件" }
 
                 ListElement { name: "基础用法"; category: "Label组件" }
                 ListElement { name: "背景支持"; category: "Label组件" }
@@ -90,8 +100,12 @@ ApplicationWindow {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        autoSwitchTimer.stop()
                         parent.ListView.view.currentIndex = index
                         contentStack.currentIndex = index
+                    }
+                    onDoubleClicked: {
+                        autoSwitchTimer.start()
                     }
                 }
 
@@ -124,7 +138,6 @@ ApplicationWindow {
             Demo_TextLink {}
             Demo_TextFit {}
             Demo_TextClickable {}
-            Demo_TextAnimation {}
 
             // Label组件
             Demo_LabelBasic {}

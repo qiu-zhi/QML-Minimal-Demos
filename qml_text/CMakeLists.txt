@@ -31,7 +31,6 @@ qt_add_qml_module(appqml_text
         Demo_TextLink.qml
         Demo_TextFit.qml
         Demo_TextClickable.qml
-        Demo_TextAnimation.qml
         Demo_LabelBasic.qml
         Demo_LabelBackground.qml
         Demo_LabelPadding.qml

@@ -63,7 +63,7 @@ A demo showcasing various window flags and popup components in Qt Quick. Include
 
 ## qml_text
 
-A demo showcasing Text and Label components in Qt Quick. Includes examples for basic text properties, font settings, text styles, alignment, wrapping, eliding, rich text (HTML), Markdown, links, font auto-fit, clickable text, and text animations.
+A demo showcasing Text and Label components in Qt Quick. Includes examples for basic text properties, font settings, text styles, alignment, wrapping, eliding, rich text (HTML), Markdown, links, font auto-fit, and clickable text.
 
 ![QML Text Demo](images/qml_text.gif)
 

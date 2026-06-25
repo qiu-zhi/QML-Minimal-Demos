@@ -5,7 +5,7 @@ project(qml_text VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTORCC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2)
+find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -49,7 +49,7 @@ set_target_properties(appqml_text PROPERTIES
 )
 
 target_link_libraries(appqml_text
-    PRIVATE Qt6::Quick Qt6::QuickControls2
+    PRIVATE Qt6::Quick
 )
 
 include(GNUInstallDirs)

@@ -9,12 +9,6 @@ find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
-# 构建时自动从 common 复制共享组件到当前目录
-set(COMMON_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../common)
-foreach(_file TitleSeparator.qml FadeInAnimation.qml)
-    configure_file(${COMMON_DIR}/${_file} ${CMAKE_CURRENT_SOURCE_DIR}/${_file} COPYONLY)
-endforeach()
-
 qt_add_executable(qml_text
     main.cpp
 )

@@ -33,11 +33,9 @@ qt_add_qml_module(appqml_windowflags
         Demo_WindowDialog.qml
 )
 
-set_source_files_properties(
-    ${COMMON_DIR}/TitleSeparator.qml
-    ${COMMON_DIR}/FadeInAnimation.qml
-    PROPERTIES QT_RESOURCE_ALIAS "/"
-)
+foreach(_file TitleSeparator.qml FadeInAnimation.qml)
+    set_source_files_properties(${COMMON_DIR}/${_file} PROPERTIES QT_RESOURCE_ALIAS ${_file})
+endforeach()
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

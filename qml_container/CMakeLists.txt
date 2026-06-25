@@ -30,11 +30,9 @@ qt_add_qml_module(qml_container
         Demo_Nested.qml
 )
 
-set_source_files_properties(
-    ${COMMON_DIR}/TitleSeparator.qml
-    ${COMMON_DIR}/FadeInAnimation.qml
-    PROPERTIES QT_RESOURCE_ALIAS "/"
-)
+foreach(_file TitleSeparator.qml FadeInAnimation.qml)
+    set_source_files_properties(${COMMON_DIR}/${_file} PROPERTIES QT_RESOURCE_ALIAS ${_file})
+endforeach()
 
 set_target_properties(qml_container PROPERTIES
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}

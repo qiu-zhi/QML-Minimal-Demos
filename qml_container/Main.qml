@@ -10,17 +10,6 @@ ApplicationWindow {
     title: "Container Demo"
     color: "#FFF"
 
-    Timer {
-        id: autoSwitchTimer
-        interval: 1000
-        repeat: true
-        onTriggered: {
-            var next = (contentStack.currentIndex + 1) % contentStack.count
-            contentStack.currentIndex = next
-            navList.currentIndex = next
-        }
-    }
-
     header: ToolBar {
         implicitHeight: 50
         leftPadding: 20
@@ -84,12 +73,8 @@ ApplicationWindow {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        autoSwitchTimer.stop()
                         parent.ListView.view.currentIndex = index
                         contentStack.currentIndex = index
-                    }
-                    onDoubleClicked: {
-                        autoSwitchTimer.start()
                     }
                 }
 

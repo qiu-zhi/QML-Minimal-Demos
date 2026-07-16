@@ -52,7 +52,7 @@ FadeInAnimation {
             ScrollView {
                 anchors.fill: parent
                 anchors.margins: 15
-                ScrollBar.horizontal.policy: ScrollBar.AlwaysOn
+                ScrollBar.horizontal.policy: ScrollBar.AsNeeded
 
                 RowLayout {
                     spacing: 10

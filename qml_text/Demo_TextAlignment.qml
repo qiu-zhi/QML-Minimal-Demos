@@ -16,56 +16,31 @@ FadeInAnimation {
             Layout.leftMargin: 20
             spacing: 12
 
-            Text {
-                width: 200
-                text: "左对齐 (默认)"
-                horizontalAlignment: Text.AlignLeft
-                font.pointSize: 11
-                Rectangle { width: parent.width; height: 1; color: "#ccc"; anchors.bottom: parent.bottom }
-            }
+            Repeater {
+                model: [
+                    { text: "左对齐 (默认)", hAlign: Text.AlignLeft, vAlign: Text.AlignVCenter, height: 32 },
+                    { text: "居中对齐", hAlign: Text.AlignHCenter, vAlign: Text.AlignVCenter, height: 32 },
+                    { text: "右对齐", hAlign: Text.AlignRight, vAlign: Text.AlignVCenter, height: 32 },
+                    { text: "垂直置顶", hAlign: Text.AlignLeft, vAlign: Text.AlignTop, height: 40 },
+                    { text: "垂直居中", hAlign: Text.AlignLeft, vAlign: Text.AlignVCenter, height: 40 },
+                    { text: "垂直底部", hAlign: Text.AlignLeft, vAlign: Text.AlignBottom, height: 40 },
+                    { text: "水平+垂直居中", hAlign: Text.AlignHCenter, vAlign: Text.AlignVCenter, height: 40 }
+                ]
 
-            Text {
-                width: 200
-                text: "居中对齐"
-                horizontalAlignment: Text.AlignHCenter
-                font.pointSize: 11
-                Rectangle { width: parent.width; height: 1; color: "#ccc"; anchors.bottom: parent.bottom }
-            }
+                Rectangle {
+                    width: 200
+                    height: modelData.height
+                    color: "#f5f5f5"
+                    border.color: "#ddd"
 
-            Text {
-                width: 200
-                text: "右对齐"
-                horizontalAlignment: Text.AlignRight
-                font.pointSize: 11
-                Rectangle { width: parent.width; height: 1; color: "#ccc"; anchors.bottom: parent.bottom }
-            }
-
-            Rectangle {
-                width: 200
-                height: 40
-                color: "#f5f5f5"
-                border.color: "#ddd"
-
-                Text {
-                    anchors.fill: parent
-                    text: "垂直居中"
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 11
-                }
-            }
-
-            Rectangle {
-                width: 200
-                height: 40
-                color: "#f5f5f5"
-                border.color: "#ddd"
-
-                Text {
-                    anchors.fill: parent
-                    text: "水平+垂直居中"
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    font.pointSize: 11
+                    Text {
+                        anchors.fill: parent
+                        anchors.margins: 4
+                        text: modelData.text
+                        horizontalAlignment: modelData.hAlign
+                        verticalAlignment: modelData.vAlign
+                        font.pointSize: 11
+                    }
                 }
             }
         }

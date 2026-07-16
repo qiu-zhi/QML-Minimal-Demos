@@ -28,7 +28,7 @@ FadeInAnimation {
                 ScrollView {
                     anchors.fill: parent
                     anchors.margins: 12
-                    ScrollBar.vertical.policy: ScrollBar.AlwaysOn
+                    ScrollBar.vertical.policy: ScrollBar.AsNeeded
 
                     ColumnLayout {
                         spacing: 6

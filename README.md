@@ -70,4 +70,12 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+## qml_container
+
+演示 Qt Quick 中的容器组件。包含 Pane、Frame、GroupBox、自定义 GroupBox、ScrollView 和嵌套组合示例，展示基础容器的用法和复杂界面的布局嵌套。
+
+![QML Container Demo](asserts/doc-images/qml_container.gif)
+
+---
+
 **持续更新中...**

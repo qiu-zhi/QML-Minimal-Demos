@@ -69,4 +69,12 @@ A demo showcasing Text and Label components in Qt Quick. Includes examples for b
 
 ---
 
+## qml_container
+
+Demonstrating container components in Qt Quick. Includes Pane, Frame, GroupBox, custom GroupBox, ScrollView, and nested composition examples, showcasing basic container usage and layout nesting for complex UIs.
+
+![QML Container Demo](asserts/doc-images/qml_container.gif)
+
+---
+
 **To be continued...**

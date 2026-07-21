@@ -69,6 +69,14 @@ A demo showcasing Text and Label components in Qt Quick. Includes examples for b
 
 ---
 
+## qml_layout
+
+Demonstrating five basic layouts in Qt Quick. Includes Row, Column, Grid, Stack, and Flow examples, showcasing the arrangement rules and use cases of different layout managers.
+
+![QML Layout Demo](asserts/doc-images/qml-layout.gif)
+
+---
+
 ## qml_container
 
 Demonstrating container components in Qt Quick. Includes Pane, Frame, GroupBox, custom GroupBox, ScrollView, and nested composition examples, showcasing basic container usage and layout nesting for complex UIs.

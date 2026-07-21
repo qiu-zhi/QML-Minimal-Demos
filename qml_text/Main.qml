@@ -12,6 +12,7 @@ ApplicationWindow {
 
     Timer {
         id: autoSwitchTimer
+        running: false
         interval: 1000
         repeat: true
         onTriggered: {
@@ -54,6 +55,7 @@ ApplicationWindow {
         // 左侧导航栏
         ListView {
             id: navList
+            clip: true
             Layout.preferredWidth: 160
             Layout.fillHeight: true
             section.property: "category"
@@ -95,7 +97,6 @@ ApplicationWindow {
                 width: parent ? parent.width : 160
                 height: 40
                 color: ListView.isCurrentItem ? "#BCE6FF" : "#FFF"
-                border.width: 0
 
                 MouseArea {
                     anchors.fill: parent

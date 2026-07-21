@@ -70,6 +70,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+## qml_layout
+
+演示 Qt Quick 中的五种基础布局。包含 Row（水平布局）、Column（垂直布局）、Grid（网格布局）、Stack（堆叠布局）和 Flow（流式布局）示例，展示不同布局管理器的排列规则与适用场景。
+
+![QML Layout Demo](asserts/doc-images/qml-layout.gif)
+
+---
+
 ## qml_container
 
 演示 Qt Quick 中的容器组件。包含 Pane、Frame、GroupBox、自定义 GroupBox、ScrollView 和嵌套组合示例，展示基础容器的用法和复杂界面的布局嵌套。

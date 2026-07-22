@@ -1,13 +1,16 @@
 import QtQuick
 import QtQuick.Layouts
 
-DemoPage {
-    title: "Text 文本省略"
-    description: "演示文本省略模式：ElideRight（右侧省略）、ElideLeft（左侧省略）、ElideMiddle（中间省略）、多行省略"
-
+FadeInAnimation {
     ColumnLayout {
-        Layout.leftMargin: 20
-        spacing: 12
+        anchors.fill: parent
+        anchors.margins: 20
+        spacing: 15
+
+        TitleSeparator {
+            title: "Text 文本省略"
+            description: "演示文本省略模式：ElideRight（右侧省略）、ElideLeft（左侧省略）、ElideMiddle（中间省略）、多行省略"
+        }
 
         Text {
             Layout.preferredWidth: 250
@@ -48,5 +51,7 @@ DemoPage {
             font.pointSize: 10
             Rectangle { anchors.fill: parent; color: "#e8eaf6"; border.color: "#9fa8da"; z: -1 }
         }
+
+        Item { Layout.fillHeight: true }
     }
 }

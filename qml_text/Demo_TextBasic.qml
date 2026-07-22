@@ -1,13 +1,17 @@
 import QtQuick
 import QtQuick.Layouts
 
-DemoPage {
-    title: "Text 基础用法"
-    description: "演示 Text 组件的基本属性：纯文本显示、颜色、粗体、斜体、下划线、删除线"
-
+FadeInAnimation {
     ColumnLayout {
+        anchors.fill: parent
+        anchors.margins: 20
+        spacing: 15
         Layout.leftMargin: 20
-        spacing: 12
+
+        TitleSeparator {
+            title: "Text 基础用法"
+            description: "演示 Text 组件的基本属性：纯文本显示、颜色、粗体、斜体、下划线、删除线"
+        }
 
         Text {
             text: "普通文本 - Hello World!"
@@ -43,5 +47,7 @@ DemoPage {
             font.pointSize: 12
             font.strikeout: true
         }
+
+        Item { Layout.fillHeight: true }
     }
 }

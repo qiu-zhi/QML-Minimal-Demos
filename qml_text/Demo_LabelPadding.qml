@@ -2,13 +2,16 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
-DemoPage {
-    title: "Label 内边距控制"
-    description: "演示 Label 的 padding 属性：统一内边距、top/bottom/left/rightPadding 独立控制"
-
+FadeInAnimation {
     ColumnLayout {
-        Layout.leftMargin: 20
-        spacing: 12
+        anchors.fill: parent
+        anchors.margins: 20
+        spacing: 15
+
+        TitleSeparator {
+            title: "Label 内边距控制"
+            description: "演示 Label 的 padding 属性：统一内边距、top/bottom/left/rightPadding 独立控制"
+        }
 
         Label {
             text: "默认内边距"
@@ -26,34 +29,10 @@ DemoPage {
             background: Rectangle { color: "#fff3e0"; border.color: "#ffb74d" }
         }
 
-        Rectangle {
-            Layout.fillWidth: true
-            height: 1
-            color: "#eee"
-        }
+        Item { Layout.fillHeight: true }
 
-        Text {
-            text: "- padding: 统一内边距"
-            font.pointSize: 9
-            color: "#666"
-        }
-
-        Text {
-            text: "- topPadding/bottomPadding"
-            font.pointSize: 9
-            color: "#666"
-        }
-
-        Text {
-            text: "- leftPadding/rightPadding"
-            font.pointSize: 9
-            color: "#666"
-        }
-
-        Text {
-            text: "- inset属性 (背景相关)"
-            font.pointSize: 9
-            color: "#666"
+        Note {
+            text: "- padding: 统一内边距\n- topPadding/bottomPadding\n- leftPadding/rightPadding\n- inset属性 (背景相关)"
         }
     }
 }

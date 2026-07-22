@@ -2,13 +2,16 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
-DemoPage {
-    title: "Label 背景支持"
-    description: "演示 Label 的 background 属性：圆角背景、渐变背景、阴影效果"
-
+FadeInAnimation {
     ColumnLayout {
-        Layout.leftMargin: 20
-        spacing: 12
+        anchors.fill: parent
+        anchors.margins: 20
+        spacing: 15
+
+        TitleSeparator {
+            title: "Label 背景支持"
+            description: "演示 Label 的 background 属性：圆角背景、渐变背景、阴影效果"
+        }
 
         Label {
             text: "圆角背景"
@@ -52,22 +55,10 @@ DemoPage {
             }
         }
 
-        Rectangle {
-            Layout.fillWidth: true
-            height: 1
-            color: "#eee"
-        }
+        Item { Layout.fillHeight: true }
 
-        Text {
-            text: "- background: Item"
-            font.pointSize: 9
-            color: "#666"
-        }
-
-        Text {
-            text: "- 自动跟随控件大小"
-            font.pointSize: 9
-            color: "#666"
+        Note {
+            text: "- background: Item\n- 自动跟随控件大小"
         }
     }
 }

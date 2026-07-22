@@ -1,13 +1,16 @@
 import QtQuick
 import QtQuick.Layouts
 
-DemoPage {
-    title: "Text 可点击文本"
-    description: "演示交互式文本：点击变色、按下缩放、按钮样式、边框按钮"
-
+FadeInAnimation {
     ColumnLayout {
-        Layout.leftMargin: 20
-        spacing: 12
+        anchors.fill: parent
+        anchors.margins: 20
+        spacing: 15
+
+        TitleSeparator {
+            title: "Text 可点击文本"
+            description: "演示交互式文本：点击变色、按下缩放、按钮样式、边框按钮"
+        }
 
         // 基础点击效果 - 用布尔属性切换颜色
         Text {
@@ -101,16 +104,10 @@ DemoPage {
             }
         }
 
-        Rectangle {
-            Layout.fillWidth: true
-            height: 1
-            color: "#eee"
-        }
+        Item { Layout.fillHeight: true }
 
-        Text {
-            text: "实现: MouseArea + Behavior动画"
-            font.pointSize: 9
-            color: "#666"
+        Note {
+            text: "- 实现: MouseArea + Behavior动画"
         }
     }
 }

@@ -1,15 +1,16 @@
 import QtQuick
 import QtQuick.Layouts
 
-DemoPage {
-    title: "Text 字体自适应"
-    description: "演示 fontSizeMode 属性：文本自动缩放以填充容器"
-
+FadeInAnimation {
     ColumnLayout {
-        Layout.fillWidth: true
-        Layout.leftMargin: 20
-        Layout.rightMargin: 20
+        anchors.fill: parent
+        anchors.margins: 20
         spacing: 15
+
+        TitleSeparator {
+            title: "Text 字体自适应"
+            description: "演示 fontSizeMode 属性：文本自动缩放以填充容器"
+        }
 
         // HorizontalFit - 适配宽度（高度固定，宽度变化时字体跟着变）
         Rectangle {
@@ -128,12 +129,10 @@ DemoPage {
             }
         }
 
-        Text {
-            text: "以上所有 Text 的 font.pixelSize 均为 72px，实际显示大小由容器尺寸和 fontSizeMode 自动决定"
-            font.pointSize: 9
-            color: "#666"
-            wrapMode: Text.WordWrap
-            Layout.fillWidth: true
+        Item { Layout.fillHeight: true }
+
+        Note {
+            text: "- 以上所有 Text 的 font.pixelSize 均为 72px，实际显示大小由容器尺寸和 fontSizeMode 自动决定"
         }
     }
 }

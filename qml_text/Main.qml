@@ -5,32 +5,17 @@ import QtQuick.Layouts
 ApplicationWindow {
     id: root
     visible: true
-    width: 750
-    height: 520
+    width: 900
+    height: 600
     title: "Text & Label Demo"
     color: "#FFF"
 
-    Timer {
-        id: autoSwitchTimer
-        running: false
-        interval: 1000
-        repeat: true
-        onTriggered: {
-            var next = (contentStack.currentIndex + 1) % contentStack.count
-            contentStack.currentIndex = next
-            navList.currentIndex = next
-        }
-    }
-
-    // 顶部标题栏
     header: ToolBar {
         implicitHeight: 50
         leftPadding: 20
-        background: Rectangle {
-            color: "#1296FF"
-        }
+        background: Rectangle { color: "#1296FF" }
         Label {
-            text: "Text & Label Demo"
+            text: root.title
             color: "white"
             font.pointSize: 14
             font.bold: true
@@ -38,11 +23,10 @@ ApplicationWindow {
         }
     }
 
-    // 底部状态栏
     footer: ToolBar {
         background: Rectangle { color: "#f5f5f5"; border.color: "#ddd"; border.width: 1 }
         Label {
-            text: "Qt6 QML示例"
+            text: "Qt6 QML 文本示例"
             color: "#666"
             font.pointSize: 10
             anchors.centerIn: parent
@@ -51,17 +35,19 @@ ApplicationWindow {
 
     RowLayout {
         anchors.fill: parent
+        spacing: 0
 
-        // 左侧导航栏
         ListView {
             id: navList
-            clip: true
-            Layout.preferredWidth: 160
+            Layout.preferredWidth: 170
             Layout.fillHeight: true
+            clip: true
+            currentIndex: 0
+
             section.property: "category"
             section.criteria: ViewSection.FullString
             section.delegate: Rectangle {
-                width: parent ? parent.width : 160
+                width: parent ? parent.width : 170
                 height: 35
                 color: "#F5F7FA"
                 Text {
@@ -73,40 +59,35 @@ ApplicationWindow {
                     font.bold: true
                 }
             }
+
             model: ListModel {
-                ListElement { name: "基础用法"; category: "Text组件" }
-                ListElement { name: "字体属性"; category: "Text组件" }
-                ListElement { name: "文本样式"; category: "Text组件" }
-                ListElement { name: "文本对齐"; category: "Text组件" }
-                ListElement { name: "文本换行"; category: "Text组件" }
-                ListElement { name: "文本省略"; category: "Text组件" }
-                ListElement { name: "富文本HTML"; category: "Text组件" }
-                ListElement { name: "Markdown"; category: "Text组件" }
-                ListElement { name: "链接交互"; category: "Text组件" }
-                ListElement { name: "字体自适应"; category: "Text组件" }
-                ListElement { name: "可点击文本"; category: "Text组件" }
-
-                ListElement { name: "基础用法"; category: "Label组件" }
-                ListElement { name: "背景支持"; category: "Label组件" }
-                ListElement { name: "内边距控制"; category: "Label组件" }
-
-                ListElement { name: "Text vs Label"; category: "对比" }
+                ListElement { name: "基础用法"; category: "Text组件"; source: "Demo_TextBasic.qml" }
+                ListElement { name: "字体属性"; category: "Text组件"; source: "Demo_TextFont.qml" }
+                ListElement { name: "文本样式"; category: "Text组件"; source: "Demo_TextStyle.qml" }
+                ListElement { name: "文本对齐"; category: "Text组件"; source: "Demo_TextAlignment.qml" }
+                ListElement { name: "文本换行"; category: "Text组件"; source: "Demo_TextWrap.qml" }
+                ListElement { name: "文本省略"; category: "Text组件"; source: "Demo_TextElide.qml" }
+                ListElement { name: "富文本HTML"; category: "Text组件"; source: "Demo_TextRich.qml" }
+                ListElement { name: "Markdown"; category: "Text组件"; source: "Demo_TextMarkdown.qml" }
+                ListElement { name: "链接交互"; category: "Text组件"; source: "Demo_TextLink.qml" }
+                ListElement { name: "字体自适应"; category: "Text组件"; source: "Demo_TextFit.qml" }
+                ListElement { name: "可点击文本"; category: "Text组件"; source: "Demo_TextClickable.qml" }
+                ListElement { name: "基础用法"; category: "Label组件"; source: "Demo_LabelBasic.qml" }
+                ListElement { name: "背景支持"; category: "Label组件"; source: "Demo_LabelBackground.qml" }
+                ListElement { name: "内边距控制"; category: "Label组件"; source: "Demo_LabelPadding.qml" }
+                ListElement { name: "Text vs Label"; category: "对比"; source: "Demo_TextVsLabel.qml" }
             }
 
             delegate: Rectangle {
-                width: parent ? parent.width : 160
+                width: parent ? parent.width : 170
                 height: 40
                 color: ListView.isCurrentItem ? "#BCE6FF" : "#FFF"
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        autoSwitchTimer.stop()
                         parent.ListView.view.currentIndex = index
-                        contentStack.currentIndex = index
-                    }
-                    onDoubleClicked: {
-                        autoSwitchTimer.start()
+                        pageLoader.source = model.source
                     }
                 }
 
@@ -121,32 +102,17 @@ ApplicationWindow {
             }
         }
 
-        // 右侧内容区
-        StackLayout {
-            id: contentStack
+        Rectangle {
+            Layout.fillHeight: true
+            Layout.preferredWidth: 1
+            color: "#ddd"
+        }
+
+        Loader {
+            id: pageLoader
             Layout.fillWidth: true
             Layout.fillHeight: true
-
-            // Text组件
-            Demo_TextBasic {}
-            Demo_TextFont {}
-            Demo_TextStyle {}
-            Demo_TextAlignment {}
-            Demo_TextWrap {}
-            Demo_TextElide {}
-            Demo_TextRich {}
-            Demo_TextMarkdown {}
-            Demo_TextLink {}
-            Demo_TextFit {}
-            Demo_TextClickable {}
-
-            // Label组件
-            Demo_LabelBasic {}
-            Demo_LabelBackground {}
-            Demo_LabelPadding {}
-
-            // 对比
-            Demo_TextVsLabel {}
+            source: navList.model.get(0).source
         }
     }
 }

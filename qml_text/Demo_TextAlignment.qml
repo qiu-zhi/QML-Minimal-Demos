@@ -1,13 +1,16 @@
 import QtQuick
 import QtQuick.Layouts
 
-DemoPage {
-    title: "Text 文本对齐"
-    description: "演示文本对齐方式：horizontalAlignment（水平）和 verticalAlignment（垂直）"
-
+FadeInAnimation {
     ColumnLayout {
-        Layout.leftMargin: 20
-        spacing: 12
+        anchors.fill: parent
+        anchors.margins: 20
+        spacing: 15
+
+        TitleSeparator {
+            title: "Text 文本对齐"
+            description: "演示文本对齐方式：horizontalAlignment（水平）和 verticalAlignment（垂直）"
+        }
 
         Repeater {
             model: [
@@ -36,5 +39,7 @@ DemoPage {
                 }
             }
         }
+
+        Item { Layout.fillHeight: true }
     }
 }

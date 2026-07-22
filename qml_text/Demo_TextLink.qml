@@ -1,13 +1,16 @@
 import QtQuick
 import QtQuick.Layouts
 
-DemoPage {
-    title: "Text 链接交互"
-    description: "演示链接交互功能：点击打开外部链接、linkActivated 信号、hoveredLink 属性"
-
+FadeInAnimation {
     ColumnLayout {
-        Layout.leftMargin: 20
-        spacing: 12
+        anchors.fill: parent
+        anchors.margins: 20
+        spacing: 15
+
+        TitleSeparator {
+            title: "Text 链接交互"
+            description: "演示链接交互功能：点击打开外部链接、linkActivated 信号、hoveredLink 属性"
+        }
 
         Text {
             text: '点击访问 <a href="https://qt.io">Qt 官网</a>'
@@ -29,22 +32,10 @@ DemoPage {
             }
         }
 
-        Rectangle {
-            Layout.fillWidth: true
-            height: 1
-            color: "#eee"
-        }
+        Item { Layout.fillHeight: true }
 
-        Text {
-            text: "实现: Text + textFormat: Text.RichText + onLinkActivated"
-            font.pointSize: 9
-            color: "#666"
-        }
-
-        Text {
-            text: "点击链接会调用 Qt.openUrlExternally() 打开浏览器"
-            font.pointSize: 9
-            color: "#666"
+        Note {
+            text: "- 实现: Text + textFormat: Text.RichText + onLinkActivated\n- 点击链接会调用 Qt.openUrlExternally() 打开浏览器"
         }
     }
 }

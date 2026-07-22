@@ -1,13 +1,17 @@
 import QtQuick
 import QtQuick.Layouts
 
-DemoPage {
-    title: "Text 字体属性"
-    description: "演示字体相关属性：font.family、font.pointSize、font.weight、font.letterSpacing、font.wordSpacing"
+FadeInAnimation {
 
     ColumnLayout {
-        Layout.leftMargin: 20
-        spacing: 12
+        anchors.fill: parent
+        anchors.margins: 20
+        spacing: 15
+
+        TitleSeparator {
+            title: "Text 字体属性"
+            description: "演示字体相关属性：font.family、font.pointSize、font.weight、font.letterSpacing、font.wordSpacing"
+        }
 
         Text {
             text: "字体系列: Arial"
@@ -43,5 +47,7 @@ DemoPage {
             font.pointSize: 12
             font.wordSpacing: 10
         }
+
+        Item { Layout.fillHeight: true }
     }
 }

@@ -7,13 +7,16 @@ ApplicationWindow {
     visible: true
     width: 900
     height: 600
-    title: "Window & Popup Demo"
+    title: "Signals Demo"
     color: "#FFF"
 
+    // 顶部标题栏
     header: ToolBar {
         implicitHeight: 50
         leftPadding: 20
-        background: Rectangle { color: "#1296FF" }
+        background: Rectangle {
+            color: "#1296FF"
+        }
         Label {
             text: root.title
             color: "white"
@@ -26,7 +29,7 @@ ApplicationWindow {
     footer: ToolBar {
         background: Rectangle { color: "#f5f5f5"; border.color: "#ddd"; border.width: 1 }
         Label {
-            text: "Qt6 QML 窗口与弹窗示例"
+            text: "Qt6 QML 信号示例"
             color: "#666"
             font.pointSize: 10
             anchors.centerIn: parent
@@ -61,15 +64,10 @@ ApplicationWindow {
             }
 
             model: ListModel {
-                ListElement { name: "Popup 弹窗"; category: "弹窗"; source: "Demo_PopupBasic.qml" }
-                ListElement { name: "Dialog 对话框"; category: "弹窗"; source: "Demo_PopupDialog.qml" }
-                ListElement { name: "自定义弹窗"; category: "弹窗"; source: "Demo_PopupCustom.qml" }
-                ListElement { name: "Qt.Tool"; category: "窗口标志位"; source: "Demo_WindowTool.qml" }
-                ListElement { name: "Qt.ToolTip"; category: "窗口标志位"; source: "Demo_WindowToolTip.qml" }
-                ListElement { name: "Qt.SplashScreen"; category: "窗口标志位"; source: "Demo_WindowSplash.qml" }
-                ListElement { name: "Qt.Frameless"; category: "窗口标志位"; source: "Demo_WindowFrameless.qml" }
-                ListElement { name: "Qt.StayOnTop"; category: "窗口标志位"; source: "Demo_WindowStayOnTop.qml" }
-                ListElement { name: "Qt.Dialog"; category: "窗口标志位"; source: "Demo_WindowDialog.qml" }
+                ListElement { name: "直接绑定"; category: "信号机制"; source: "Demo_DirectBinding.qml" }
+                ListElement { name: "跨文件通信"; category: "信号机制"; source: "Demo_CrossFileSignals.qml" }
+                ListElement { name: "JS动态连接"; category: "信号机制"; source: "Demo_JsDynamic.qml" }
+                ListElement { name: "C++到QML"; category: "信号机制"; source: "Demo_CppToQMLSignals.qml" }
             }
 
             delegate: Rectangle {

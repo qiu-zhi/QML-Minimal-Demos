@@ -1,13 +1,16 @@
 import QtQuick
 import QtQuick.Layouts
 
-DemoPage {
-    title: "Text 文本换行"
-    description: "演示 wrapMode 属性：NoWrap（不换行）、WordWrap（单词边界换行）、Wrap（任意位置换行）"
-
+FadeInAnimation {
     ColumnLayout {
-        Layout.leftMargin: 20
+        anchors.fill: parent
+        anchors.margins: 20
         spacing: 15
+
+        TitleSeparator {
+            title: "Text 文本换行"
+            description: "演示 wrapMode 属性：NoWrap（不换行）、WordWrap（单词边界换行）、Wrap（任意位置换行）"
+        }
 
         Text {
             Layout.preferredWidth: 250
@@ -32,5 +35,7 @@ DemoPage {
             font.pointSize: 12
             Rectangle { anchors.fill: parent; color: "#e3f2fd"; border.color: "#42a5f5"; z: -1 }
         }
+
+        Item { Layout.fillHeight: true }
     }
 }

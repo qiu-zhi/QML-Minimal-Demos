@@ -50,7 +50,7 @@ AI 生成的 QML 代码常出现两类问题：
 
 一个最小化 QML 示例，演示文字渲染配合两种基础动画：颜色过渡和弹跳效果。"Hello World" 文字从窗口顶部动画移动到中心，同时从白色渐变为深灰色。
 
-![QML Hello Demo](asserts/doc-images/qml_hello.gif)
+![QML Hello Demo](asserts/doc-images/qml-hello.gif)
 
 ---
 
@@ -58,7 +58,7 @@ AI 生成的 QML 代码常出现两类问题：
 
 演示 Qt Quick 中各种窗口标志位和弹出组件。包含 Popup、Dialog 和自定义弹窗，以及 Tool、ToolTip、SplashScreen、Frameless、StayOnTop、Dialog 等窗口标志位示例。
 
-![QML Window Flags Demo](asserts/doc-images/qml_windows.gif)
+![QML Window Flags Demo](asserts/doc-images/qml-windows.gif)
 
 ---
 
@@ -66,7 +66,7 @@ AI 生成的 QML 代码常出现两类问题：
 
 演示 Qt Quick 中的 Text 和 Label 组件。包含基础文本属性、字体设置、文本样式、对齐、换行、省略、富文本(HTML)、Markdown、链接交互、字体自适应和可点击文本等示例。
 
-![QML Text Demo](asserts/doc-images/qml_text.gif)
+![QML Text Demo](asserts/doc-images/qml-text.gif)
 
 ---
 
@@ -82,7 +82,7 @@ AI 生成的 QML 代码常出现两类问题：
 
 演示 Qt Quick 中的容器组件。包含 Pane、Frame、GroupBox、自定义 GroupBox、ScrollView 和嵌套组合示例，展示基础容器的用法和复杂界面的布局嵌套。
 
-![QML Container Demo](asserts/doc-images/qml_container.gif)
+![QML Container Demo](asserts/doc-images/qml-container.gif)
 
 ---
 

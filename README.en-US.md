@@ -49,7 +49,7 @@ Each example has a small codebase (usually 50-200 lines), focusing on demonstrat
 
 A minimal QML example demonstrating text rendering with two basic animations: color transition and bounce effect. The "Hello World" text animates from the top of the window to the center while fading from white to dark gray.
 
-![QML Hello Demo](asserts/doc-images/qml_hello.gif)
+![QML Hello Demo](asserts/doc-images/qml-hello.gif)
 
 ---
 
@@ -57,7 +57,7 @@ A minimal QML example demonstrating text rendering with two basic animations: co
 
 A demo showcasing various window flags and popup components in Qt Quick. Includes Popup, Dialog, and custom popups, as well as window flag examples like Tool, ToolTip, SplashScreen, Frameless, StayOnTop, and Dialog.
 
-![QML Window Flags Demo](asserts/doc-images/qml_windows.gif)
+![QML Window Flags Demo](asserts/doc-images/qml-windows.gif)
 
 ---
 
@@ -65,7 +65,7 @@ A demo showcasing various window flags and popup components in Qt Quick. Include
 
 A demo showcasing Text and Label components in Qt Quick. Includes examples for basic text properties, font settings, text styles, alignment, wrapping, eliding, rich text (HTML), Markdown, links, font auto-fit, and clickable text.
 
-![QML Text Demo](asserts/doc-images/qml_text.gif)
+![QML Text Demo](asserts/doc-images/qml-text.gif)
 
 ---
 
@@ -81,7 +81,7 @@ Demonstrating five basic layouts in Qt Quick. Includes Row, Column, Grid, Stack,
 
 Demonstrating container components in Qt Quick. Includes Pane, Frame, GroupBox, custom GroupBox, ScrollView, and nested composition examples, showcasing basic container usage and layout nesting for complex UIs.
 
-![QML Container Demo](asserts/doc-images/qml_container.gif)
+![QML Container Demo](asserts/doc-images/qml-container.gif)
 
 ---
 

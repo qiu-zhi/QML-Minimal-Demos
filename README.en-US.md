@@ -85,4 +85,20 @@ Demonstrating container components in Qt Quick. Includes Pane, Frame, GroupBox, 
 
 ---
 
+## qml_signals
+
+A demo showcasing signal and slot mechanisms in Qt Quick. Includes examples of direct binding, cross-file communication, JS dynamic connections, and C++ to QML signal interoperation.
+
+![QML Signals Demo](asserts/doc-images/qml-signals.gif)
+
+---
+
+## qml_timer
+
+A demo showcasing basic usage of the Timer component in Qt Quick. Includes examples of single-shot, repeat, triggered-on-start, and using Timer to control animations.
+
+![QML Timer Demo](asserts/doc-images/qml-timer.gif)
+
+---
+
 **To be continued...**

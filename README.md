@@ -86,4 +86,20 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+## qml_signals
+
+演示 Qt Quick 中的信号与槽机制。包含直接绑定、跨文件通信、JS 动态连接以及 C++ 到 QML 的信号互操作示例。
+
+![QML Signals Demo](asserts/doc-images/qml-signals.gif)
+
+---
+
+## qml_timer
+
+演示 Qt Quick 中 Timer 组件的基础用法。包含单次触发、重复触发、启动立即触发以及用 Timer 控制动画等示例。
+
+![QML Timer Demo](asserts/doc-images/qml-timer.gif)
+
+---
+
 **持续更新中...**

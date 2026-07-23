@@ -54,3 +54,9 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+# QtCreator project directory
+.qtcreator
+
+# Articles directory
+articles

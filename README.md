@@ -58,7 +58,7 @@ AI 生成的 QML 代码常出现两类问题：
 
 演示 Qt Quick 中各种窗口标志位和弹出组件。包含 Popup、Dialog 和自定义弹窗，以及 Tool、ToolTip、SplashScreen、Frameless、StayOnTop、Dialog 等窗口标志位示例。
 
-![QML Window Flags Demo](asserts/doc-images/qml-windows.gif)
+![QML Window Flags Demo](asserts/doc-images/qml-windowflags.gif)
 
 ---
 
@@ -99,6 +99,38 @@ AI 生成的 QML 代码常出现两类问题：
 演示 Qt Quick 中 Timer 组件的基础用法。包含单次触发、重复触发、启动立即触发以及用 Timer 控制动画等示例。
 
 ![QML Timer Demo](asserts/doc-images/qml-timer.gif)
+
+---
+
+## qml_tooltip
+
+演示 Qt Quick 中 ToolTip 组件的用法。包含基础悬停提示、自定义样式、富文本提示与阴影效果等示例。
+
+![QML ToolTip Demo](asserts/doc-images/qml-tooltip.gif)
+
+---
+
+## qml_busyindicator
+
+演示 Qt Quick 中 BusyIndicator 加载指示器的用法。包含基础用法、原生实现自定义配色、矩形缺口环和 Shape 圆弧动画等示例。
+
+![QML BusyIndicator Demo](asserts/doc-images/qml-busyindicator.gif)
+
+---
+
+## qml_js_interaction
+
+演示 Qt Quick 中 QML 与 JavaScript 的交互方式。包含内联 JS 函数、导入外部 JS 文件、JS 函数作为信号槽以及 WorkerScript 工作线程示例。
+
+![QML JS Interaction Demo](asserts/doc-images/qml-js-interaction.gif)
+
+---
+
+## qml_button
+
+演示 Qt Quick 中常用按钮和选择控件。包含 Button、RoundButton、DelayButton、Switch、CheckBox、RadioButton、ToolButton、TabButton、ItemDelegate 以及自定义按钮组件示例。
+
+![QML Button Demo](asserts/doc-images/qml-button.gif)
 
 ---
 

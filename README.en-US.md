@@ -16,7 +16,7 @@ Since 2025, I've been using my spare time to generate demo code with DeepSeek, t
 ## Environment Requirements
 
 - Minimum Qt version: 6.5
-- Current development environment: Win11 + Qt 6.8.2 / Qt 6.11.1 / upcoming Qt 6.12
+- Current development environment: Win11 + Qt 6.8.2 / Qt 6.11.1
 - Note: Qt 6 programs cannot run on Win7; versions after Qt 6.12 will drop Win10 support
 
 ## Who Is This For
@@ -53,23 +53,9 @@ A minimal QML example demonstrating text rendering with two basic animations: co
 
 ---
 
-## qml_windowflags
+## Basic Controls
 
-A demo showcasing various window flags and popup components in Qt Quick. Includes Popup, Dialog, and custom popups, as well as window flag examples like Tool, ToolTip, SplashScreen, Frameless, StayOnTop, and Dialog.
-
-![QML Window Flags Demo](asserts/doc-images/qml-windowflags.gif)
-
----
-
-## qml_text
-
-A demo showcasing Text and Label components in Qt Quick. Includes examples for basic text properties, font settings, text styles, alignment, wrapping, eliding, rich text (HTML), Markdown, links, font auto-fit, and clickable text.
-
-![QML Text Demo](asserts/doc-images/qml-text.gif)
-
----
-
-## qml_layout
+### qml_layout
 
 Demonstrating five basic layouts in Qt Quick. Includes Row, Column, Grid, Stack, and Flow examples, showcasing the arrangement rules and use cases of different layout managers.
 
@@ -77,7 +63,15 @@ Demonstrating five basic layouts in Qt Quick. Includes Row, Column, Grid, Stack,
 
 ---
 
-## qml_container
+### qml_text
+
+A demo showcasing Text and Label components in Qt Quick. Includes examples for basic text properties, font settings, text styles, alignment, wrapping, eliding, rich text (HTML), Markdown, links, font auto-fit, and clickable text.
+
+![QML Text Demo](asserts/doc-images/qml-text.gif)
+
+---
+
+### qml_container
 
 Demonstrating container components in Qt Quick. Includes Pane, Frame, GroupBox, custom GroupBox, ScrollView, and nested composition examples, showcasing basic container usage and layout nesting for complex UIs.
 
@@ -85,7 +79,17 @@ Demonstrating container components in Qt Quick. Includes Pane, Frame, GroupBox, 
 
 ---
 
-## qml_signals
+### qml_button
+
+Demonstrating common buttons and selection controls in Qt Quick. Includes examples of Button, RoundButton, DelayButton, Switch, CheckBox, RadioButton, ToolButton, TabButton, ItemDelegate, and a custom button component.
+
+![QML Button Demo](asserts/doc-images/qml-button.gif)
+
+---
+
+## Interaction Basics
+
+### qml_signals
 
 A demo showcasing signal and slot mechanisms in Qt Quick. Includes examples of direct binding, cross-file communication, JS dynamic connections, and C++ to QML signal interoperation.
 
@@ -93,7 +97,7 @@ A demo showcasing signal and slot mechanisms in Qt Quick. Includes examples of d
 
 ---
 
-## qml_timer
+### qml_timer
 
 A demo showcasing basic usage of the Timer component in Qt Quick. Includes examples of single-shot, repeat, triggered-on-start, and using Timer to control animations.
 
@@ -101,23 +105,7 @@ A demo showcasing basic usage of the Timer component in Qt Quick. Includes examp
 
 ---
 
-## qml_tooltip
-
-A demo showcasing the ToolTip component in Qt Quick. Includes examples of basic hover tips, custom styles, rich text tips, and shadow effects.
-
-![QML ToolTip Demo](asserts/doc-images/qml-tooltip.gif)
-
----
-
-## qml_busyindicator
-
-A demo showcasing the BusyIndicator loading indicator in Qt Quick. Includes examples of basic usage, native implementation with custom colors, notched rectangle ring, and Shape arc animation.
-
-![QML BusyIndicator Demo](asserts/doc-images/qml-busyindicator.gif)
-
----
-
-## qml_js_interaction
+### qml_js_interaction
 
 A demo showcasing QML and JavaScript interaction in Qt Quick. Includes examples of inline JS functions, importing external JS files, JS functions as slots, and WorkerScript worker threads.
 
@@ -125,11 +113,31 @@ A demo showcasing QML and JavaScript interaction in Qt Quick. Includes examples 
 
 ---
 
-## qml_button
+## Animation & Effects
 
-Demonstrating common buttons and selection controls in Qt Quick. Includes examples of Button, RoundButton, DelayButton, Switch, CheckBox, RadioButton, ToolButton, TabButton, ItemDelegate, and a custom button component.
+### qml_busyindicator
 
-![QML Button Demo](asserts/doc-images/qml-button.gif)
+A demo showcasing the BusyIndicator loading indicator in Qt Quick. Includes examples of basic usage, native implementation with custom colors, notched rectangle ring, and Shape arc animation.
+
+![QML BusyIndicator Demo](asserts/doc-images/qml-busyindicator.gif)
+
+---
+
+## Popups & Dialogs
+
+### qml_windowflags
+
+A demo showcasing various window flags and popup components in Qt Quick. Includes Popup, Dialog, and custom popups, as well as window flag examples like Tool, ToolTip, SplashScreen, Frameless, StayOnTop, and Dialog.
+
+![QML Window Flags Demo](asserts/doc-images/qml-windowflags.gif)
+
+---
+
+### qml_tooltip
+
+A demo showcasing the ToolTip component in Qt Quick. Includes examples of basic hover tips, custom styles, rich text tips, and shadow effects.
+
+![QML ToolTip Demo](asserts/doc-images/qml-tooltip.gif)
 
 ---
 

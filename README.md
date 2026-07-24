@@ -17,7 +17,7 @@ Qt 官方的 QML 文档相对稀疏，初学者容易感到迷茫。
 ## 环境要求
 
 - 最低 Qt 版本：6.5
-- 当前开发环境：Win11 + Qt 6.8.2 / Qt 6.11.1 / 即将推出 Qt 6.12
+- 当前开发环境：Win11 + Qt 6.8.2 / Qt 6.11.1
 - 注意：Qt 6 程序无法在 Win7 上运行；Qt 6.12 之后的版本将不再支持 Win10
 
 ## 适用人群
@@ -54,23 +54,9 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
-## qml_windowflags
+## 基础控件篇
 
-演示 Qt Quick 中各种窗口标志位和弹出组件。包含 Popup、Dialog 和自定义弹窗，以及 Tool、ToolTip、SplashScreen、Frameless、StayOnTop、Dialog 等窗口标志位示例。
-
-![QML Window Flags Demo](asserts/doc-images/qml-windowflags.gif)
-
----
-
-## qml_text
-
-演示 Qt Quick 中的 Text 和 Label 组件。包含基础文本属性、字体设置、文本样式、对齐、换行、省略、富文本(HTML)、Markdown、链接交互、字体自适应和可点击文本等示例。
-
-![QML Text Demo](asserts/doc-images/qml-text.gif)
-
----
-
-## qml_layout
+### qml_layout
 
 演示 Qt Quick 中的五种基础布局。包含 Row（水平布局）、Column（垂直布局）、Grid（网格布局）、Stack（堆叠布局）和 Flow（流式布局）示例，展示不同布局管理器的排列规则与适用场景。
 
@@ -78,7 +64,15 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
-## qml_container
+### qml_text
+
+演示 Qt Quick 中的 Text 和 Label 组件。包含基础文本属性、字体设置、文本样式、对齐、换行、省略、富文本(HTML)、Markdown、链接交互、字体自适应和可点击文本等示例。
+
+![QML Text Demo](asserts/doc-images/qml-text.gif)
+
+---
+
+### qml_container
 
 演示 Qt Quick 中的容器组件。包含 Pane、Frame、GroupBox、自定义 GroupBox、ScrollView 和嵌套组合示例，展示基础容器的用法和复杂界面的布局嵌套。
 
@@ -86,7 +80,17 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
-## qml_signals
+### qml_button
+
+演示 Qt Quick 中常用按钮和选择控件。包含 Button、RoundButton、DelayButton、Switch、CheckBox、RadioButton、ToolButton、TabButton、ItemDelegate 以及自定义按钮组件示例。
+
+![QML Button Demo](asserts/doc-images/qml-button.gif)
+
+---
+
+## 交互基础篇
+
+### qml_signals
 
 演示 Qt Quick 中的信号与槽机制。包含直接绑定、跨文件通信、JS 动态连接以及 C++ 到 QML 的信号互操作示例。
 
@@ -94,7 +98,7 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
-## qml_timer
+### qml_timer
 
 演示 Qt Quick 中 Timer 组件的基础用法。包含单次触发、重复触发、启动立即触发以及用 Timer 控制动画等示例。
 
@@ -102,23 +106,7 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
-## qml_tooltip
-
-演示 Qt Quick 中 ToolTip 组件的用法。包含基础悬停提示、自定义样式、富文本提示与阴影效果等示例。
-
-![QML ToolTip Demo](asserts/doc-images/qml-tooltip.gif)
-
----
-
-## qml_busyindicator
-
-演示 Qt Quick 中 BusyIndicator 加载指示器的用法。包含基础用法、原生实现自定义配色、矩形缺口环和 Shape 圆弧动画等示例。
-
-![QML BusyIndicator Demo](asserts/doc-images/qml-busyindicator.gif)
-
----
-
-## qml_js_interaction
+### qml_js_interaction
 
 演示 Qt Quick 中 QML 与 JavaScript 的交互方式。包含内联 JS 函数、导入外部 JS 文件、JS 函数作为信号槽以及 WorkerScript 工作线程示例。
 
@@ -126,11 +114,31 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
-## qml_button
+## 动画效果篇
 
-演示 Qt Quick 中常用按钮和选择控件。包含 Button、RoundButton、DelayButton、Switch、CheckBox、RadioButton、ToolButton、TabButton、ItemDelegate 以及自定义按钮组件示例。
+### qml_busyindicator
 
-![QML Button Demo](asserts/doc-images/qml-button.gif)
+演示 Qt Quick 中 BusyIndicator 加载指示器的用法。包含基础用法、原生实现自定义配色、矩形缺口环和 Shape 圆弧动画等示例。
+
+![QML BusyIndicator Demo](asserts/doc-images/qml-busyindicator.gif)
+
+---
+
+## 弹窗对话篇
+
+### qml_windowflags
+
+演示 Qt Quick 中各种窗口标志位和弹出组件。包含 Popup、Dialog 和自定义弹窗，以及 Tool、ToolTip、SplashScreen、Frameless、StayOnTop、Dialog 等窗口标志位示例。
+
+![QML Window Flags Demo](asserts/doc-images/qml-windowflags.gif)
+
+---
+
+### qml_tooltip
+
+演示 Qt Quick 中 ToolTip 组件的用法。包含基础悬停提示、自定义样式、富文本提示与阴影效果等示例。
+
+![QML ToolTip Demo](asserts/doc-images/qml-tooltip.gif)
 
 ---
 

@@ -89,7 +89,7 @@ Demonstrating common buttons and selection controls in Qt Quick. Includes exampl
 
 ### qml_slider
 
-Demonstrating Slider and RangeSlider components in Qt Quick. Includes basic Slider usage, custom handle styles, tick marks, fully custom track and progress, RangeSlider range selection, and practical scenarios such as volume control and video progress bar.
+Demonstrating `Slider` and `RangeSlider` components in Qt Quick. Includes basic slider, custom handle/track/tick marks, RangeSlider range selection, and scenario examples such as volume control and video progress bar.
 
 ![QML Slider Demo](asserts/doc-images/qml-slider.gif)
 

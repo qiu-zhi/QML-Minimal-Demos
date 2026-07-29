@@ -95,6 +95,22 @@ Demonstrating `Slider` and `RangeSlider` components in Qt Quick. Includes basic 
 
 ---
 
+### qml_dial
+
+Demonstrating the `Dial` knob component in Qt Quick. Includes basic dial, numeric display, custom styles, mouse/wheel/keyboard events, multi-dial linkage, scale drawing, and audio equalizer examples.
+
+![QML Dial Demo](asserts/doc-images/qml-dial.gif)
+
+---
+
+### qml_spinbox
+
+Demonstrating the `SpinBox` numeric input component in Qt Quick. Includes basic SpinBox, custom step size, Basic and Material custom styles, as well as scale animation and rolling number list examples.
+
+![QML SpinBox Demo](asserts/doc-images/qml-spinbox.gif)
+
+---
+
 ## Interaction Basics
 
 ### qml_signals

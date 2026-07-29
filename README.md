@@ -96,6 +96,22 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_dial
+
+演示 Qt Quick 中 `Dial` 旋钮控件的用法。包含基础旋钮、数值显示、自定义样式、鼠标/滚轮/键盘事件、多 Dial 联动、刻度绘制以及音频均衡器等示例。
+
+![QML Dial Demo](asserts/doc-images/qml-dial.gif)
+
+---
+
+### qml_spinbox
+
+演示 Qt Quick 中 `SpinBox` 数字输入框的用法。包含基础 SpinBox、自定义步长、Basic 与 Material 自定义样式，以及缩放动画和数字滚动列表等示例。
+
+![QML SpinBox Demo](asserts/doc-images/qml-spinbox.gif)
+
+---
+
 ## 交互基础篇
 
 ### qml_signals

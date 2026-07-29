@@ -88,6 +88,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_slider
+
+演示 Qt Quick 中 Slider 与 RangeSlider 滑块控件的用法。包含 Slider 基础用法、自定义手柄样式、刻度标记、完全自定义轨道与进度、RangeSlider 范围选择，以及音量控制和视频进度条等实际应用场景。
+
+![QML Slider Demo](asserts/doc-images/qml-slider.gif)
+
+---
+
 ## 交互基础篇
 
 ### qml_signals

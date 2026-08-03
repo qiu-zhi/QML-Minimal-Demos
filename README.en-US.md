@@ -147,6 +147,14 @@ A demo showcasing the BusyIndicator loading indicator in Qt Quick. Includes exam
 
 ---
 
+### qml_tumbler
+
+A demo showcasing the `Tumbler` wheel selector component in Qt Quick. Includes examples of basic time selection, color picker, fade gradient, highlight background, 3D rotation, date selection, linked date selection, and horizontal scrolling.
+
+![QML Tumbler Demo](asserts/doc-images/qml-tumbler.gif)
+
+---
+
 ## Popups & Dialogs
 
 ### qml_windowflags

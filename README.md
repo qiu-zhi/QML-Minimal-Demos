@@ -148,6 +148,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_tumbler
+
+演示 Qt Quick 中 `Tumbler` 滚轮选择器的用法。包含基础时间选择、颜色选择器、透明度渐变、高亮背景、3D 旋转、年月日选择、日期联动选择和水平滚动等示例。
+
+![QML Tumbler Demo](asserts/doc-images/qml-tumbler.gif)
+
+---
+
 ## 弹窗对话篇
 
 ### qml_windowflags

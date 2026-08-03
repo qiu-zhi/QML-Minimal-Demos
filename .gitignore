@@ -60,3 +60,7 @@ compile_commands.json
 
 # Articles directory
 articles
+
+# AI
+.reasonix
+

@@ -112,6 +112,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_progressbar
+
+演示 Qt Quick 中 `ProgressBar` 进度条的用法。包含默认样式、平滑动画、矩形自定义、Material 风格、条纹不确定动画，以及环形和多环进度等示例。
+
+![QML ProgressBar Demo](asserts/doc-images/qml-progressbar.gif)
+
+---
+
 ## 交互基础篇
 
 ### qml_signals
@@ -135,6 +143,22 @@ AI 生成的 QML 代码常出现两类问题：
 演示 Qt Quick 中 QML 与 JavaScript 的交互方式。包含内联 JS 函数、导入外部 JS 文件、JS 函数作为信号槽以及 WorkerScript 工作线程示例。
 
 ![QML JS Interaction Demo](asserts/doc-images/qml-js-interaction.gif)
+
+---
+
+### qml_mousearea
+
+演示 Qt Quick 中 `MouseArea` 鼠标交互区域组件的用法。包含基础点击与悬停、点击坐标获取、单击与双击区分、长按检测、多按键检测、拖拽移动、滚轮缩放、事件传递和自定义按钮等示例。
+
+![QML MouseArea Demo](asserts/doc-images/qml-mousearea.gif)
+
+---
+
+### qml_shortcut
+
+演示 Qt Quick 中 `Shortcut` 快捷键组件的用法。包含基础快捷键、组合键序列、单键快捷键、修饰键组合、快捷键动作面板、状态切换、上下文作用域和多快捷键管理示例。
+
+![QML Shortcut Demo](asserts/doc-images/qml-shortcut.gif)
 
 ---
 

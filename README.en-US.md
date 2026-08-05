@@ -111,6 +111,14 @@ Demonstrating the `SpinBox` numeric input component in Qt Quick. Includes basic 
 
 ---
 
+### qml_progressbar
+
+A demo showcasing the `ProgressBar` component in Qt Quick. Includes examples of default style, smooth animation, custom rectangle, Material style, indeterminate stripe animation, as well as circular and multi-ring progress.
+
+![QML ProgressBar Demo](asserts/doc-images/qml-progressbar.gif)
+
+---
+
 ## Interaction Basics
 
 ### qml_signals
@@ -134,6 +142,22 @@ A demo showcasing basic usage of the Timer component in Qt Quick. Includes examp
 A demo showcasing QML and JavaScript interaction in Qt Quick. Includes examples of inline JS functions, importing external JS files, JS functions as slots, and WorkerScript worker threads.
 
 ![QML JS Interaction Demo](asserts/doc-images/qml-js-interaction.gif)
+
+---
+
+### qml_mousearea
+
+A demo showcasing the `MouseArea` mouse interaction component in Qt Quick. Includes examples of basic click and hover, click position tracking, single vs double click, press and hold, multi-button detection, drag and move, mouse wheel zoom, event propagation, and custom buttons.
+
+![QML MouseArea Demo](asserts/doc-images/qml-mousearea.gif)
+
+---
+
+### qml_shortcut
+
+A demo showcasing the `Shortcut` keyboard shortcut component in Qt Quick. Includes examples of basic shortcuts, key sequences, single-key shortcuts, modifier key combinations, shortcut action panel, state toggling, context scoping, and multi-shortcut management.
+
+![QML Shortcut Demo](asserts/doc-images/qml-shortcut.gif)
 
 ---
 

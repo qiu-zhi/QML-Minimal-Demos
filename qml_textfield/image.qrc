@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/search1.png</file>
+        <file>icons/search2.png</file>
+        <file>icons/clear.png</file>
+        <file>icons/user-icon.png</file>
+        <file>icons/lock-icon.png</file>
+    </qresource>
+</RCC>

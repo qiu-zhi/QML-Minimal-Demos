@@ -198,4 +198,20 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+## qml_textarea
+
+演示 Qt Quick 中的 TextArea 多行文本编辑组件。包含基础文本编辑、字体与颜色、富文本、换行模式等基础示例，自定义样式、暗色主题、Material 风格等样式示例，以及文本搜索、带行号的文本编辑器、Markdown 编辑器、保持滚动、加载大文本等应用示例。
+
+![QML TextArea Demo](asserts/doc-images/qml-textarea.gif)
+
+---
+
+## qml_textfield
+
+演示 Qt Quick 中的 TextField 单行输入组件。包含基础输入与输入限制等基础示例，年龄、邮箱、手机号、掩码与日期、IP 地址、身份证等多种校验规则，自定义文本框、带图标、带删除按钮、主题切换等样式示例，以及自动关联、表单提交等应用示例。
+
+![QML TextField Demo](asserts/doc-images/qml-textfield.gif)
+
+---
+
 **持续更新中...**

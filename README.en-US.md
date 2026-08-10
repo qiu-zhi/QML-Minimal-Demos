@@ -197,4 +197,20 @@ A demo showcasing the ToolTip component in Qt Quick. Includes examples of basic 
 
 ---
 
+## qml_textarea
+
+A demo showcasing the TextArea component (multi-line text editing) in Qt Quick. Includes basic examples for text editing, font & color, rich text, and wrap modes; style examples for custom styles, dark theme, and Material style; and application examples like text search, a line-numbered text editor, a Markdown editor, scroll retention, and loading large text.
+
+![QML TextArea Demo](asserts/doc-images/qml-textarea.gif)
+
+---
+
+## qml_textfield
+
+A demo showcasing the TextField component (single-line input) in Qt Quick. Includes basic examples for input and input limits; various validation rules such as age, email, phone, input mask & date, IP address, and ID card; style examples for custom text fields, icon fields, clearable fields, and theme switching; and application examples like auto-suggest and form submission.
+
+![QML TextField Demo](asserts/doc-images/qml-textfield.gif)
+
+---
+
 **To be continued...**

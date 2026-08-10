@@ -146,22 +146,6 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
-### qml_mousearea
-
-演示 Qt Quick 中 `MouseArea` 鼠标交互区域组件的用法。包含基础点击与悬停、点击坐标获取、单击与双击区分、长按检测、多按键检测、拖拽移动、滚轮缩放、事件传递和自定义按钮等示例。
-
-![QML MouseArea Demo](asserts/doc-images/qml-mousearea.gif)
-
----
-
-### qml_shortcut
-
-演示 Qt Quick 中 `Shortcut` 快捷键组件的用法。包含基础快捷键、组合键序列、单键快捷键、修饰键组合、快捷键动作面板、状态切换、上下文作用域和多快捷键管理示例。
-
-![QML Shortcut Demo](asserts/doc-images/qml-shortcut.gif)
-
----
-
 ## 动画效果篇
 
 ### qml_busyindicator

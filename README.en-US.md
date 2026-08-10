@@ -145,22 +145,6 @@ A demo showcasing QML and JavaScript interaction in Qt Quick. Includes examples 
 
 ---
 
-### qml_mousearea
-
-A demo showcasing the `MouseArea` mouse interaction component in Qt Quick. Includes examples of basic click and hover, click position tracking, single vs double click, press and hold, multi-button detection, drag and move, mouse wheel zoom, event propagation, and custom buttons.
-
-![QML MouseArea Demo](asserts/doc-images/qml-mousearea.gif)
-
----
-
-### qml_shortcut
-
-A demo showcasing the `Shortcut` keyboard shortcut component in Qt Quick. Includes examples of basic shortcuts, key sequences, single-key shortcuts, modifier key combinations, shortcut action panel, state toggling, context scoping, and multi-shortcut management.
-
-![QML Shortcut Demo](asserts/doc-images/qml-shortcut.gif)
-
----
-
 ## Animation & Effects
 
 ### qml_busyindicator

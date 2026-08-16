@@ -119,6 +119,14 @@ A demo showcasing the `ProgressBar` component in Qt Quick. Includes examples of 
 
 ---
 
+### qml_combobox
+
+A demo showcasing the `ComboBox` dropdown selection component in Qt Quick. Includes basic usage with string arrays and ListModel multi-role models; advanced usage such as custom display text, disabled items, editable input, dynamic model updates, grouped and multi-column layouts, and performance optimization for 10,000-item datasets; plus fully custom Basic styles and Material theme styles.
+
+![QML ComboBox Demo](asserts/doc-images/qml-combobox.gif)
+
+---
+
 ## Interaction Basics
 
 ### qml_signals

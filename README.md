@@ -120,6 +120,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_combobox
+
+演示 Qt Quick 中 `ComboBox` 下拉选择框的用法。包含字符串数组与 ListModel 多角色模型等基础用法，自定义显示文本、禁用选项、可编辑输入、动态更新模型、分组与多列展示、万级大数据性能优化，以及 Basic 完全自定义样式和 Material 主题样式等示例。
+
+![QML ComboBox Demo](asserts/doc-images/qml-combobox.gif)
+
+---
+
 ## 交互基础篇
 
 ### qml_signals

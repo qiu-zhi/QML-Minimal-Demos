@@ -153,6 +153,46 @@ A demo showcasing QML and JavaScript interaction in Qt Quick. Includes examples 
 
 ---
 
+### qml_mousearea
+
+A demo showcasing the MouseArea mouse interaction area in Qt Quick. Includes examples for basic click and hover, single and double click, press-and-hold and multiple buttons, mouse drag, wheel zoom, event propagation, and custom buttons.
+
+![QML MouseArea Demo](asserts/doc-images/qml-mousearea.gif)
+
+---
+
+### qml_action_button_group
+
+A demo showcasing Action sharing and ButtonGroup in Qt Quick. Includes examples for Action reuse and shortcut binding, ButtonGroup exclusive selection, and non-exclusive multi-selection with parent-child linkage.
+
+![QML Action Button Group Demo](asserts/doc-images/qml-action-button-group.gif)
+
+---
+
+### qml_shortcut
+
+A demo showcasing the Shortcut component in Qt Quick. Includes examples for basic shortcuts, key sequences, single key and modifier key combinations, shortcut menus, toggle states, context scopes, and multi-shortcut management.
+
+![QML Shortcut Demo](asserts/doc-images/qml-shortcut.gif)
+
+---
+
+### qml_keys_focus
+
+A demo showcasing Keys and focus management in Qt Quick. Includes examples for basic keys, key modifiers, focus scope and force active focus, key navigation, tab navigation, key propagation, and game controls.
+
+![QML Keys Focus Demo](asserts/doc-images/qml-keys-focus.gif)
+
+---
+
+### qml_drag_drop
+
+A demo showcasing drag and DropArea in Qt Quick. Includes examples for free drag and axis constraints, DropArea receiving and data exchange, drag snap and list reordering, kanban cross-column drag, and grid puzzles.
+
+![QML Drag Drop Demo](asserts/doc-images/qml-drag-drop.gif)
+
+---
+
 ## Animation & Effects
 
 ### qml_busyindicator

@@ -154,6 +154,46 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_mousearea
+
+演示 Qt Quick 中 MouseArea 鼠标交互区域的用法。包含基础点击与悬停、单击与双击、长按与多按键、鼠标拖拽、滚轮缩放、事件传递以及自定义按钮等示例。
+
+![QML MouseArea Demo](asserts/doc-images/qml-mousearea.gif)
+
+---
+
+### qml_action_button_group
+
+演示 Qt Quick 中 Action 动作共享与 ButtonGroup 按钮组的用法。包含 Action 基础复用与快捷键绑定、ButtonGroup 单选互斥与多选父子联动等示例。
+
+![QML Action Button Group Demo](asserts/doc-images/qml-action-button-group.gif)
+
+---
+
+### qml_shortcut
+
+演示 Qt Quick 中 Shortcut 快捷键组件的用法。包含基础快捷键、组合键序列、单键与修饰键组合、快捷键菜单、状态切换、上下文作用域以及多快捷键管理等示例。
+
+![QML Shortcut Demo](asserts/doc-images/qml-shortcut.gif)
+
+---
+
+### qml_keys_focus
+
+演示 Qt Quick 中 Keys 按键与焦点管理的用法。包含按键基础、按键修饰符、焦点作用域与强制焦点、键盘导航、Tab 键导航、按键传播以及游戏控制等示例。
+
+![QML Keys Focus Demo](asserts/doc-images/qml-keys-focus.gif)
+
+---
+
+### qml_drag_drop
+
+演示 Qt Quick 中拖拽与 DropArea 放置区的用法。包含自由拖拽与单轴约束、DropArea 接收拖拽与数据交换、拖拽吸附与列表排序、看板跨列拖拽以及数字拼图等示例。
+
+![QML Drag Drop Demo](asserts/doc-images/qml-drag-drop.gif)
+
+---
+
 ## 动画效果篇
 
 ### qml_busyindicator

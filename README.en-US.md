@@ -253,4 +253,44 @@ A demo showcasing date and time formatting, parsing, pickers, and visualization 
 
 ---
 
+## qml_page
+
+A demo showcasing the Page component in Qt Quick Controls. Includes basic Page usage with automatic header/footer layout, multi-page nested structures, hosting StackLayout, SwipeView, and StackView inside a Page (including reading the host page title via `Page.title`), and content that auto-resizes when the header/footer is toggled dynamically.
+
+![QML Page Demo](asserts/doc-images/qml-page.gif)
+
+---
+
+## qml_loader
+
+A demo showcasing dynamic component loading with the Loader element in Qt Quick. Includes loading from a file (`source`) and loading an inline component (`sourceComponent`), monitoring loading status (`status` / `onLoaded`), dynamic tab switching where pages are destroyed and rebuilt on change, creating controls dynamically with `Qt.createComponent` / `createObject`, delayed loading with Timer, conditionally switching components, and property passing via `loader.item`.
+
+![QML Loader Demo](asserts/doc-images/qml-loader.gif)
+
+---
+
+## qml_tabbar
+
+A demo showcasing tab navigation with TabBar in Qt Quick Controls. Includes basic TabBar usage with `currentIndex` switching and automatic positioning when placed in a Page header/footer, custom TabButton (`contentItem` / `background` / checked state), dynamically adding and removing tabs with Repeater and ListModel, one-way linkage with StackLayout, and two-way binding with SwipeView (using the attached `TabBar.index` property).
+
+![QML TabBar Demo](asserts/doc-images/qml-tabbar.gif)
+
+---
+
+## qml_swipeview
+
+A demo showcasing the SwipeView paging container in Qt Quick Controls. Includes basic SwipeView with a PageIndicator, a custom indicator delegate, two-way linkage with TabBar, lazy loading with Loader that only instantiates neighboring pages (`isCurrentItem` / `isNextItem` / `isPreviousItem`), and a simple photo browser application with paging, auto-play, and pause control.
+
+![QML SwipeView Demo](asserts/doc-images/qml-swipeview.gif)
+
+---
+
+## qml_stackview
+
+A demo showcasing the StackView page stack in Qt Quick Controls. Includes basic push / pop / replace operations and `StackView.Immediate` for animation-free switching, batch push / pop and clearing the stack (`pushItems` / `depth`), custom push/pop enter/exit transitions, TabBar linkage with stack lookup and jump (`pop(item)` / `get()`), pushing pages as Item / Component / URL (with property injection and signal connection), and a card-stacking effect based on `StackView.index` offset.
+
+![QML StackView Demo](asserts/doc-images/qml-stackview.gif)
+
+---
+
 **To be continued...**

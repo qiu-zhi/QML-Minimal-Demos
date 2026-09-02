@@ -254,4 +254,44 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+## qml_page
+
+演示 Qt Quick Controls 中 Page 页面组件的用法。包含基础 Page 与 header/footer 自动布局、多页面嵌套结构，Page 内嵌 StackLayout、SwipeView、StackView 做容器宿主（含 Page.title 宿主读取），以及 header/footer 动态显隐时页面内容自适应伸缩等示例。
+
+![QML Page Demo](asserts/doc-images/qml-page.gif)
+
+---
+
+## qml_loader
+
+演示 Qt Quick 中 Loader 动态加载组件的用法。包含从文件加载（`source`）与加载内联组件（`sourceComponent`）、加载状态监听（`status` / `onLoaded`）、动态标签页切换（换页即销毁重建）、`Qt.createComponent` / `createObject` 动态创建控件、Timer 延迟加载、条件切换组件，以及属性传递与 `loader.item` 访问等示例。
+
+![QML Loader Demo](asserts/doc-images/qml-loader.gif)
+
+---
+
+## qml_tabbar
+
+演示 Qt Quick Controls 中 TabBar 页签导航的用法。包含基础 TabBar（`currentIndex` 切换）与放入 Page.header/footer 自动定位、自定义 TabButton（`contentItem` / `background` / 选中态）、Repeater 配合 ListModel 动态增删标签，以及与 StackLayout 单向联动、与 SwipeView 双向绑定（`TabBar.index` 附加属性）等示例。
+
+![QML TabBar Demo](asserts/doc-images/qml-tabbar.gif)
+
+---
+
+## qml_swipeview
+
+演示 Qt Quick Controls 中 SwipeView 滑动翻页容器的用法。包含基础 SwipeView 配合 PageIndicator 指示器、自定义指示器 delegate、与 TabBar 双向联动、配合 Loader 只创建相邻页的懒加载（`isCurrentItem` / `isNextItem` / `isPreviousItem`），以及翻页 + 自动轮播 + 暂停控制的简易图片浏览器应用等示例。
+
+![QML SwipeView Demo](asserts/doc-images/qml-swipeview.gif)
+
+---
+
+## qml_stackview
+
+演示 Qt Quick Controls 中 StackView 页面栈的用法。包含 push / pop / replace 基本操作与 `StackView.Immediate` 无动画切换、批量 push / pop 与清空栈（`pushItems` / `depth`）、自定义 push/pop 进出场过渡动画、与 TabBar 联动查栈跳转（`pop(item)` / `get()`）、push Item / Component / URL 三种传参方式（含属性注入与信号连接），以及基于 `StackView.index` 位移的卡片堆叠效果等示例。
+
+![QML StackView Demo](asserts/doc-images/qml-stackview.gif)
+
+---
+
 **持续更新中...**

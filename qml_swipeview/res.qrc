@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>wallpaper/1.png</file>
+        <file>wallpaper/2.png</file>
+        <file>wallpaper/3.png</file>
+        <file>wallpaper/4.png</file>
+        <file>images/left.svg</file>
+        <file>images/play.svg</file>
+        <file>images/pause.svg</file>
+        <file>images/right.svg</file>
+    </qresource>
+</RCC>

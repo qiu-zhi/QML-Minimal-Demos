@@ -245,4 +245,12 @@ A demo showcasing the TextField component (single-line input) in Qt Quick. Inclu
 
 ---
 
+## qml_date
+
+A demo showcasing date and time formatting, parsing, pickers, and visualization in Qt Quick. Includes examples of Locale long/short formats and custom format strings, multi-locale date display (Chinese/English/German/Japanese/French), string parsing and timestamp conversion, Tumbler-based hour-minute and year-month-day-hour-minute pickers with day-count linkage between months, and a Canvas 2D analog clock.
+
+![QML Date Demo](asserts/doc-images/qml-date.gif)
+
+---
+
 **To be continued...**

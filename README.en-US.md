@@ -111,11 +111,35 @@ Demonstrating the `SpinBox` numeric input component in Qt Quick. Includes basic 
 
 ---
 
+### qml_tumbler
+
+A demo showcasing the `Tumbler` wheel selector component in Qt Quick. Includes examples of basic time selection, color picker, fade gradient, highlight background, 3D rotation, date selection, linked date selection, and horizontal scrolling.
+
+![QML Tumbler Demo](asserts/doc-images/qml-tumbler.gif)
+
+---
+
 ### qml_progressbar
 
 A demo showcasing the `ProgressBar` component in Qt Quick. Includes examples of default style, smooth animation, custom rectangle, Material style, indeterminate stripe animation, as well as circular and multi-ring progress.
 
 ![QML ProgressBar Demo](asserts/doc-images/qml-progressbar.gif)
+
+---
+
+### qml_textfield
+
+A demo showcasing the TextField component (single-line input) in Qt Quick. Includes basic examples for input and input limits; various validation rules such as age, email, phone, input mask & date, IP address, and ID card; style examples for custom text fields, icon fields, clearable fields, and theme switching; and application examples like auto-suggest and form submission.
+
+![QML TextField Demo](asserts/doc-images/qml-textfield.gif)
+
+---
+
+### qml_textarea
+
+A demo showcasing the TextArea component (multi-line text editing) in Qt Quick. Includes basic examples for text editing, font & color, rich text, and wrap modes; style examples for custom styles, dark theme, and Material style; and application examples like text search, a line-numbered text editor, a Markdown editor, scroll retention, and loading large text.
+
+![QML TextArea Demo](asserts/doc-images/qml-textarea.gif)
 
 ---
 
@@ -145,6 +169,14 @@ A demo showcasing basic usage of the Timer component in Qt Quick. Includes examp
 
 ---
 
+### qml_date
+
+A demo showcasing date and time formatting, parsing, pickers, and visualization in Qt Quick. Includes examples of Locale long/short formats and custom format strings, multi-locale date display (Chinese/English/German/Japanese/French), string parsing and timestamp conversion, Tumbler-based hour-minute and year-month-day-hour-minute pickers with day-count linkage between months, and a Canvas 2D analog clock.
+
+![QML Date Demo](asserts/doc-images/qml-date.gif)
+
+---
+
 ### qml_js_interaction
 
 A demo showcasing QML and JavaScript interaction in Qt Quick. Includes examples of inline JS functions, importing external JS files, JS functions as slots, and WorkerScript worker threads.
@@ -158,14 +190,6 @@ A demo showcasing QML and JavaScript interaction in Qt Quick. Includes examples 
 A demo showcasing the MouseArea mouse interaction area in Qt Quick. Includes examples for basic click and hover, single and double click, press-and-hold and multiple buttons, mouse drag, wheel zoom, event propagation, and custom buttons.
 
 ![QML MouseArea Demo](asserts/doc-images/qml-mousearea.gif)
-
----
-
-### qml_action_button_group
-
-A demo showcasing Action sharing and ButtonGroup in Qt Quick. Includes examples for Action reuse and shortcut binding, ButtonGroup exclusive selection, and non-exclusive multi-selection with parent-child linkage.
-
-![QML Action Button Group Demo](asserts/doc-images/qml-action-button-group.gif)
 
 ---
 
@@ -193,6 +217,56 @@ A demo showcasing drag and DropArea in Qt Quick. Includes examples for free drag
 
 ---
 
+## View Navigation
+
+### qml_page
+
+A demo showcasing the Page component in Qt Quick Controls. Includes basic Page usage with automatic header/footer layout, multi-page nested structures, hosting StackLayout, SwipeView, and StackView inside a Page (including reading the host page title via `Page.title`), and content that auto-resizes when the header/footer is toggled dynamically.
+
+![QML Page Demo](asserts/doc-images/qml-page.gif)
+
+---
+
+### qml_loader
+
+A demo showcasing dynamic component loading with the Loader element in Qt Quick. Includes loading from a file (`source`) and loading an inline component (`sourceComponent`), monitoring loading status (`status` / `onLoaded`), dynamic tab switching where pages are destroyed and rebuilt on change, creating controls dynamically with `Qt.createComponent` / `createObject`, delayed loading with Timer, conditionally switching components, and property passing via `loader.item`.
+
+![QML Loader Demo](asserts/doc-images/qml-loader.gif)
+
+---
+
+### qml_tabbar
+
+A demo showcasing tab navigation with TabBar in Qt Quick Controls. Includes basic TabBar usage with `currentIndex` switching and automatic positioning when placed in a Page header/footer, custom TabButton (`contentItem` / `background` / checked state), dynamically adding and removing tabs with Repeater and ListModel, one-way linkage with StackLayout, and two-way binding with SwipeView (using the attached `TabBar.index` property).
+
+![QML TabBar Demo](asserts/doc-images/qml-tabbar.gif)
+
+---
+
+### qml_swipeview
+
+A demo showcasing the SwipeView paging container in Qt Quick Controls. Includes basic SwipeView with a PageIndicator, a custom indicator delegate, two-way linkage with TabBar, lazy loading with Loader that only instantiates neighboring pages (`isCurrentItem` / `isNextItem` / `isPreviousItem`), and a simple photo browser application with paging, auto-play, and pause control.
+
+![QML SwipeView Demo](asserts/doc-images/qml-swipeview.gif)
+
+---
+
+### qml_stackview
+
+A demo showcasing the StackView page stack in Qt Quick Controls. Includes basic push / pop / replace operations and `StackView.Immediate` for animation-free switching, batch push / pop and clearing the stack (`pushItems` / `depth`), custom push/pop enter/exit transitions, TabBar linkage with stack lookup and jump (`pop(item)` / `get()`), pushing pages as Item / Component / URL (with property injection and signal connection), and a card-stacking effect based on `StackView.index` offset.
+
+![QML StackView Demo](asserts/doc-images/qml-stackview.gif)
+
+---
+
+### qml_action_button_group
+
+A demo showcasing Action sharing and ButtonGroup in Qt Quick. Includes examples for Action reuse and shortcut binding, ButtonGroup exclusive selection, and non-exclusive multi-selection with parent-child linkage.
+
+![QML Action Button Group Demo](asserts/doc-images/qml-action-button-group.gif)
+
+---
+
 ## Animation & Effects
 
 ### qml_busyindicator
@@ -203,11 +277,13 @@ A demo showcasing the BusyIndicator loading indicator in Qt Quick. Includes exam
 
 ---
 
-### qml_tumbler
+### qml_lottie
 
-A demo showcasing the `Tumbler` wheel selector component in Qt Quick. Includes examples of basic time selection, color picker, fade gradient, highlight background, 3D rotation, date selection, linked date selection, and horizontal scrolling.
+A demo showcasing the LottieAnimation component based on `Qt.labs.lottieqt` for playing Lottie JSON animations in Qt Quick. Includes a gallery of multiple independent animations playing on screen simultaneously, playback controls (play / pause / stop / replay), frame-level scrubbing (`gotoAndStop`) and duration query (`getDuration`), and forward / reverse (`direction`) and loop-count (`loops`) control.
 
-![QML Tumbler Demo](asserts/doc-images/qml-tumbler.gif)
+> **Running tip**：Recommended to run this project with **Qt 6.11** (full Lottie animation support). It also runs on **Qt 6.8**, but some animations may not render fully.
+
+![QML Lottie Demo](asserts/doc-images/qml-lottie.gif)
 
 ---
 
@@ -226,70 +302,6 @@ A demo showcasing various window flags and popup components in Qt Quick. Include
 A demo showcasing the ToolTip component in Qt Quick. Includes examples of basic hover tips, custom styles, rich text tips, and shadow effects.
 
 ![QML ToolTip Demo](asserts/doc-images/qml-tooltip.gif)
-
----
-
-## qml_textarea
-
-A demo showcasing the TextArea component (multi-line text editing) in Qt Quick. Includes basic examples for text editing, font & color, rich text, and wrap modes; style examples for custom styles, dark theme, and Material style; and application examples like text search, a line-numbered text editor, a Markdown editor, scroll retention, and loading large text.
-
-![QML TextArea Demo](asserts/doc-images/qml-textarea.gif)
-
----
-
-## qml_textfield
-
-A demo showcasing the TextField component (single-line input) in Qt Quick. Includes basic examples for input and input limits; various validation rules such as age, email, phone, input mask & date, IP address, and ID card; style examples for custom text fields, icon fields, clearable fields, and theme switching; and application examples like auto-suggest and form submission.
-
-![QML TextField Demo](asserts/doc-images/qml-textfield.gif)
-
----
-
-## qml_date
-
-A demo showcasing date and time formatting, parsing, pickers, and visualization in Qt Quick. Includes examples of Locale long/short formats and custom format strings, multi-locale date display (Chinese/English/German/Japanese/French), string parsing and timestamp conversion, Tumbler-based hour-minute and year-month-day-hour-minute pickers with day-count linkage between months, and a Canvas 2D analog clock.
-
-![QML Date Demo](asserts/doc-images/qml-date.gif)
-
----
-
-## qml_page
-
-A demo showcasing the Page component in Qt Quick Controls. Includes basic Page usage with automatic header/footer layout, multi-page nested structures, hosting StackLayout, SwipeView, and StackView inside a Page (including reading the host page title via `Page.title`), and content that auto-resizes when the header/footer is toggled dynamically.
-
-![QML Page Demo](asserts/doc-images/qml-page.gif)
-
----
-
-## qml_loader
-
-A demo showcasing dynamic component loading with the Loader element in Qt Quick. Includes loading from a file (`source`) and loading an inline component (`sourceComponent`), monitoring loading status (`status` / `onLoaded`), dynamic tab switching where pages are destroyed and rebuilt on change, creating controls dynamically with `Qt.createComponent` / `createObject`, delayed loading with Timer, conditionally switching components, and property passing via `loader.item`.
-
-![QML Loader Demo](asserts/doc-images/qml-loader.gif)
-
----
-
-## qml_tabbar
-
-A demo showcasing tab navigation with TabBar in Qt Quick Controls. Includes basic TabBar usage with `currentIndex` switching and automatic positioning when placed in a Page header/footer, custom TabButton (`contentItem` / `background` / checked state), dynamically adding and removing tabs with Repeater and ListModel, one-way linkage with StackLayout, and two-way binding with SwipeView (using the attached `TabBar.index` property).
-
-![QML TabBar Demo](asserts/doc-images/qml-tabbar.gif)
-
----
-
-## qml_swipeview
-
-A demo showcasing the SwipeView paging container in Qt Quick Controls. Includes basic SwipeView with a PageIndicator, a custom indicator delegate, two-way linkage with TabBar, lazy loading with Loader that only instantiates neighboring pages (`isCurrentItem` / `isNextItem` / `isPreviousItem`), and a simple photo browser application with paging, auto-play, and pause control.
-
-![QML SwipeView Demo](asserts/doc-images/qml-swipeview.gif)
-
----
-
-## qml_stackview
-
-A demo showcasing the StackView page stack in Qt Quick Controls. Includes basic push / pop / replace operations and `StackView.Immediate` for animation-free switching, batch push / pop and clearing the stack (`pushItems` / `depth`), custom push/pop enter/exit transitions, TabBar linkage with stack lookup and jump (`pop(item)` / `get()`), pushing pages as Item / Component / URL (with property injection and signal connection), and a card-stacking effect based on `StackView.index` offset.
-
-![QML StackView Demo](asserts/doc-images/qml-stackview.gif)
 
 ---
 

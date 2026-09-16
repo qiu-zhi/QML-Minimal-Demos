@@ -112,11 +112,35 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_tumbler
+
+演示 Qt Quick 中 `Tumbler` 滚轮选择器的用法。包含基础时间选择、颜色选择器、透明度渐变、高亮背景、3D 旋转、年月日选择、日期联动选择和水平滚动等示例。
+
+![QML Tumbler Demo](asserts/doc-images/qml-tumbler.gif)
+
+---
+
 ### qml_progressbar
 
 演示 Qt Quick 中 `ProgressBar` 进度条的用法。包含默认样式、平滑动画、矩形自定义、Material 风格、条纹不确定动画，以及环形和多环进度等示例。
 
 ![QML ProgressBar Demo](asserts/doc-images/qml-progressbar.gif)
+
+---
+
+### qml_textfield
+
+演示 Qt Quick 中的 TextField 单行输入组件。包含基础输入与输入限制等基础示例，年龄、邮箱、手机号、掩码与日期、IP 地址、身份证等多种校验规则，自定义文本框、带图标、带删除按钮、主题切换等样式示例，以及自动关联、表单提交等应用示例。
+
+![QML TextField Demo](asserts/doc-images/qml-textfield.gif)
+
+---
+
+### qml_textarea
+
+演示 Qt Quick 中的 TextArea 多行文本编辑组件。包含基础文本编辑、字体与颜色、富文本、换行模式等基础示例，自定义样式、暗色主题、Material 风格等样式示例，以及文本搜索、带行号的文本编辑器、Markdown 编辑器、保持滚动、加载大文本等应用示例。
+
+![QML TextArea Demo](asserts/doc-images/qml-textarea.gif)
 
 ---
 
@@ -146,6 +170,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_date
+
+演示 Qt Quick 中日期时间的格式化、解析、选择与可视化。包含 Locale 长/短格式与自定义格式字符串、多地区日期显示（中文/英文/德文/日文/法文）、字符串解析与时间戳互转、基于 Tumbler 的时分与年月日时分选择器（含月份天数联动），以及 Canvas 2D 模拟时钟等示例。
+
+![QML Date Demo](asserts/doc-images/qml-date.gif)
+
+---
+
 ### qml_js_interaction
 
 演示 Qt Quick 中 QML 与 JavaScript 的交互方式。包含内联 JS 函数、导入外部 JS 文件、JS 函数作为信号槽以及 WorkerScript 工作线程示例。
@@ -159,14 +191,6 @@ AI 生成的 QML 代码常出现两类问题：
 演示 Qt Quick 中 MouseArea 鼠标交互区域的用法。包含基础点击与悬停、单击与双击、长按与多按键、鼠标拖拽、滚轮缩放、事件传递以及自定义按钮等示例。
 
 ![QML MouseArea Demo](asserts/doc-images/qml-mousearea.gif)
-
----
-
-### qml_action_button_group
-
-演示 Qt Quick 中 Action 动作共享与 ButtonGroup 按钮组的用法。包含 Action 基础复用与快捷键绑定、ButtonGroup 单选互斥与多选父子联动等示例。
-
-![QML Action Button Group Demo](asserts/doc-images/qml-action-button-group.gif)
 
 ---
 
@@ -194,6 +218,56 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+## 视图导航篇
+
+### qml_page
+
+演示 Qt Quick Controls 中 Page 页面组件的用法。包含基础 Page 与 header/footer 自动布局、多页面嵌套结构，Page 内嵌 StackLayout、SwipeView、StackView 做容器宿主（含 Page.title 宿主读取），以及 header/footer 动态显隐时页面内容自适应伸缩等示例。
+
+![QML Page Demo](asserts/doc-images/qml-page.gif)
+
+---
+
+### qml_loader
+
+演示 Qt Quick 中 Loader 动态加载组件的用法。包含从文件加载（`source`）与加载内联组件（`sourceComponent`）、加载状态监听（`status` / `onLoaded`）、动态标签页切换（换页即销毁重建）、`Qt.createComponent` / `createObject` 动态创建控件、Timer 延迟加载、条件切换组件，以及属性传递与 `loader.item` 访问等示例。
+
+![QML Loader Demo](asserts/doc-images/qml-loader.gif)
+
+---
+
+### qml_tabbar
+
+演示 Qt Quick Controls 中 TabBar 页签导航的用法。包含基础 TabBar（`currentIndex` 切换）与放入 Page.header/footer 自动定位、自定义 TabButton（`contentItem` / `background` / 选中态）、Repeater 配合 ListModel 动态增删标签，以及与 StackLayout 单向联动、与 SwipeView 双向绑定（`TabBar.index` 附加属性）等示例。
+
+![QML TabBar Demo](asserts/doc-images/qml-tabbar.gif)
+
+---
+
+### qml_swipeview
+
+演示 Qt Quick Controls 中 SwipeView 滑动翻页容器的用法。包含基础 SwipeView 配合 PageIndicator 指示器、自定义指示器 delegate、与 TabBar 双向联动、配合 Loader 只创建相邻页的懒加载（`isCurrentItem` / `isNextItem` / `isPreviousItem`），以及翻页 + 自动轮播 + 暂停控制的简易图片浏览器应用等示例。
+
+![QML SwipeView Demo](asserts/doc-images/qml-swipeview.gif)
+
+---
+
+### qml_stackview
+
+演示 Qt Quick Controls 中 StackView 页面栈的用法。包含 push / pop / replace 基本操作与 `StackView.Immediate` 无动画切换、批量 push / pop 与清空栈（`pushItems` / `depth`）、自定义 push/pop 进出场过渡动画、与 TabBar 联动查栈跳转（`pop(item)` / `get()`）、push Item / Component / URL 三种传参方式（含属性注入与信号连接），以及基于 `StackView.index` 位移的卡片堆叠效果等示例。
+
+![QML StackView Demo](asserts/doc-images/qml-stackview.gif)
+
+---
+
+### qml_action_button_group
+
+演示 Qt Quick 中 Action 动作共享与 ButtonGroup 按钮组的用法。包含 Action 基础复用与快捷键绑定、ButtonGroup 单选互斥与多选父子联动等示例。
+
+![QML Action Button Group Demo](asserts/doc-images/qml-action-button-group.gif)
+
+---
+
 ## 动画效果篇
 
 ### qml_busyindicator
@@ -204,11 +278,13 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
-### qml_tumbler
+### qml_lottie
 
-演示 Qt Quick 中 `Tumbler` 滚轮选择器的用法。包含基础时间选择、颜色选择器、透明度渐变、高亮背景、3D 旋转、年月日选择、日期联动选择和水平滚动等示例。
+演示 Qt Quick 中基于 `Qt.labs.lottieqt` 的 LottieAnimation 播放 Lottie JSON 动画。包含多路动画同屏独立播放的展示墙、播放/暂停/停止/从头播放等播放控制、帧级拖拽、方向/循环次数控制等示例。
 
-![QML Tumbler Demo](asserts/doc-images/qml-tumbler.gif)
+> **运行提示**：推荐使用 **Qt 6.11** 运行本工程（完整支持 Lottie 动画）；**Qt 6.8** 也能跑起来，但部分动画显示不全。
+
+![QML Lottie Demo](asserts/doc-images/qml-lottie.gif)
 
 ---
 
@@ -227,70 +303,6 @@ AI 生成的 QML 代码常出现两类问题：
 演示 Qt Quick 中 ToolTip 组件的用法。包含基础悬停提示、自定义样式、富文本提示与阴影效果等示例。
 
 ![QML ToolTip Demo](asserts/doc-images/qml-tooltip.gif)
-
----
-
-## qml_textarea
-
-演示 Qt Quick 中的 TextArea 多行文本编辑组件。包含基础文本编辑、字体与颜色、富文本、换行模式等基础示例，自定义样式、暗色主题、Material 风格等样式示例，以及文本搜索、带行号的文本编辑器、Markdown 编辑器、保持滚动、加载大文本等应用示例。
-
-![QML TextArea Demo](asserts/doc-images/qml-textarea.gif)
-
----
-
-## qml_textfield
-
-演示 Qt Quick 中的 TextField 单行输入组件。包含基础输入与输入限制等基础示例，年龄、邮箱、手机号、掩码与日期、IP 地址、身份证等多种校验规则，自定义文本框、带图标、带删除按钮、主题切换等样式示例，以及自动关联、表单提交等应用示例。
-
-![QML TextField Demo](asserts/doc-images/qml-textfield.gif)
-
----
-
-## qml_date
-
-演示 Qt Quick 中日期时间的格式化、解析、选择与可视化。包含 Locale 长/短格式与自定义格式字符串、多地区日期显示（中文/英文/德文/日文/法文）、字符串解析与时间戳互转、基于 Tumbler 的时分与年月日时分选择器（含月份天数联动），以及 Canvas 2D 模拟时钟等示例。
-
-![QML Date Demo](asserts/doc-images/qml-date.gif)
-
----
-
-## qml_page
-
-演示 Qt Quick Controls 中 Page 页面组件的用法。包含基础 Page 与 header/footer 自动布局、多页面嵌套结构，Page 内嵌 StackLayout、SwipeView、StackView 做容器宿主（含 Page.title 宿主读取），以及 header/footer 动态显隐时页面内容自适应伸缩等示例。
-
-![QML Page Demo](asserts/doc-images/qml-page.gif)
-
----
-
-## qml_loader
-
-演示 Qt Quick 中 Loader 动态加载组件的用法。包含从文件加载（`source`）与加载内联组件（`sourceComponent`）、加载状态监听（`status` / `onLoaded`）、动态标签页切换（换页即销毁重建）、`Qt.createComponent` / `createObject` 动态创建控件、Timer 延迟加载、条件切换组件，以及属性传递与 `loader.item` 访问等示例。
-
-![QML Loader Demo](asserts/doc-images/qml-loader.gif)
-
----
-
-## qml_tabbar
-
-演示 Qt Quick Controls 中 TabBar 页签导航的用法。包含基础 TabBar（`currentIndex` 切换）与放入 Page.header/footer 自动定位、自定义 TabButton（`contentItem` / `background` / 选中态）、Repeater 配合 ListModel 动态增删标签，以及与 StackLayout 单向联动、与 SwipeView 双向绑定（`TabBar.index` 附加属性）等示例。
-
-![QML TabBar Demo](asserts/doc-images/qml-tabbar.gif)
-
----
-
-## qml_swipeview
-
-演示 Qt Quick Controls 中 SwipeView 滑动翻页容器的用法。包含基础 SwipeView 配合 PageIndicator 指示器、自定义指示器 delegate、与 TabBar 双向联动、配合 Loader 只创建相邻页的懒加载（`isCurrentItem` / `isNextItem` / `isPreviousItem`），以及翻页 + 自动轮播 + 暂停控制的简易图片浏览器应用等示例。
-
-![QML SwipeView Demo](asserts/doc-images/qml-swipeview.gif)
-
----
-
-## qml_stackview
-
-演示 Qt Quick Controls 中 StackView 页面栈的用法。包含 push / pop / replace 基本操作与 `StackView.Immediate` 无动画切换、批量 push / pop 与清空栈（`pushItems` / `depth`）、自定义 push/pop 进出场过渡动画、与 TabBar 联动查栈跳转（`pop(item)` / `get()`）、push Item / Component / URL 三种传参方式（含属性注入与信号连接），以及基于 `StackView.index` 位移的卡片堆叠效果等示例。
-
-![QML StackView Demo](asserts/doc-images/qml-stackview.gif)
 
 ---
 

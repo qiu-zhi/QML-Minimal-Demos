@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/app.svg</file>
+        <file>images/home.svg</file>
+        <file>images/msg.svg</file>
+        <file>images/settings.svg</file>
+        <file>images/stats.svg</file>
+        <file>images/user.svg</file>
+    </qresource>
+</RCC>

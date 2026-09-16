@@ -268,6 +268,48 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_drawer
+
+演示 Qt Quick 中 Drawer 抽屉式导航的用法。四个方向的抽屉集中在同一页对比：顶部消息通知、右侧功能设置（含开关列表）、底部常用功能宫格、左侧导航（选中项高亮并回传），统一用 `parent: Overlay.overlay` 贴住窗口边缘滑出，并支持点击遮罩收起。
+
+![QML Drawer Demo](asserts/doc-images/qml-drawer.gif)
+
+---
+
+### qml_navigation_layout
+
+演示 Qt Quick 中四种常见导航布局的写法与选型。包含顶部导航栏（配合 StackView 页面栈与四段进出场转场）、抽屉式导航（遮罩层加 `Behavior on x` 滑出面板）、侧边导航栏（左栏常驻 + StackLayout 换页），以及底部导航栏（图标加文字 Tab，一份数据同时驱动内容区与 Tab 条两处界面）。
+
+![QML Navigation Layout Demo](asserts/doc-images/qml-navigation-layout.gif)
+
+---
+
+## 数据视图篇
+
+### qml_repeater
+
+演示 Qt Quick 中 Repeater 基于模型重复生成元素的用法。包含整数、JS 数组、字符串数组等基础模型，以及 ListModel 与 C++ `QAbstractListModel` 数据模型（配合 `beginInsertRows` / `endInsertRows` 同步视图），并统一提供增加/减少数量的交互按钮，直观对比各模型在增删元素时的通知差异。
+
+![QML Repeater Demo](asserts/doc-images/qml-repeater.gif)
+
+---
+
+### qml_delegatechoice
+
+演示 Qt Quick 中 DelegateChooser / DelegateChoice 按数据选择不同委托的用法。包含按角色值（`roleValue`）匹配、按索引（`index`）匹配、多条件组合（条件为"与"关系、按声明顺序取第一个命中），以及 TableView 专用的按列（`column`）匹配等示例。
+
+![QML DelegateChoice Demo](asserts/doc-images/qml-delegatechoice.gif)
+
+---
+
+### qml_itemdelegate
+
+演示 Qt Quick 中各类 ItemDelegate 列表项委托的样式与交互。包含基础点击、复选、单选、开关四种基础委托（操作指示器统一左置，右侧留白避免被滚动条遮挡），左右滑动露出删除/归档与滑动露出背景两种 SwipeDelegate（滑动时裁剪，避免文字残留），以及基于 C++ 树模型的 TreeViewDelegate 树形列表。
+
+![QML ItemDelegate Demo](asserts/doc-images/qml-itemdelegate.gif)
+
+---
+
 ## 动画效果篇
 
 ### qml_busyindicator

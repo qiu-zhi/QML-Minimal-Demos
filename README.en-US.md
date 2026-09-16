@@ -267,6 +267,48 @@ A demo showcasing Action sharing and ButtonGroup in Qt Quick. Includes examples 
 
 ---
 
+### qml_drawer
+
+A demo showcasing Drawer-based navigation in Qt Quick. Four drawers from different edges are compared on a single page: a top notification list, right-side settings (with a switch list), a bottom quick-action grid, and a left navigation drawer with a highlighted selection. All of them use `parent: Overlay.overlay` so they slide out from the window edges, and can be dismissed by clicking the scrim.
+
+![QML Drawer Demo](asserts/doc-images/qml-drawer.gif)
+
+---
+
+### qml_navigation_layout
+
+A demo showcasing four common navigation layouts in Qt Quick and how to choose between them. Includes a top navigation bar (with a StackView page stack and four enter/exit transitions), drawer navigation (a scrim plus a panel sliding via `Behavior on x`), a sidebar (a persistent left column switching pages with StackLayout), and a bottom navigation bar (icon-and-text tabs driven by a single data source that feeds both the content area and the tab bar).
+
+![QML Navigation Layout Demo](asserts/doc-images/qml-navigation-layout.gif)
+
+---
+
+## Data Views
+
+### qml_repeater
+
+A demo showcasing how Repeater generates elements repeatedly from a model in Qt Quick. Includes basic models such as an integer, a JS array, and a string list, plus data models like ListModel and a C++ `QAbstractListModel` (kept in sync via `beginInsertRows` / `endInsertRows`). Every demo provides the same increase/decrease buttons, making it easy to compare how each model notifies changes when items are added or removed.
+
+![QML Repeater Demo](asserts/doc-images/qml-repeater.gif)
+
+---
+
+### qml_delegatechoice
+
+A demo showcasing how DelegateChooser / DelegateChoice select different delegates based on data. Includes matching by role value (`roleValue`), by index (`index`), by multiple combined conditions (all conditions must match, and the first declared match wins), and by column (`column`), which is specific to TableView.
+
+![QML DelegateChoice Demo](asserts/doc-images/qml-delegatechoice.gif)
+
+---
+
+### qml_itemdelegate
+
+A demo showcasing the styles and interactions of the various ItemDelegate list-item delegates in Qt Quick. Includes the basic click, check, radio, and switch delegates (with their indicators moved to the left and the right side left blank so a scroll bar never covers them), two SwipeDelegate variants (swipe to reveal delete/archive, and swipe to reveal a background) with clipping to avoid leftover text while swiping, and a TreeViewDelegate tree list backed by a C++ tree model.
+
+![QML ItemDelegate Demo](asserts/doc-images/qml-itemdelegate.gif)
+
+---
+
 ## Animation & Effects
 
 ### qml_busyindicator

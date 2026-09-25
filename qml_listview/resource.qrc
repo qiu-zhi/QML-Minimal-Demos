@@ -1,0 +1,15 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>images/avatar1.png</file>
+        <file>images/avatar2.png</file>
+        <file>images/avatar3.png</file>
+        <file>icons/user.png</file>
+        <file>icons/add.png</file>
+        <file>icons/find.png</file>
+        <file>icons/delete.png</file>
+        <file>icons/phone.png</file>
+        <file>icons/clear.png</file>
+        <file>icons/edit.png</file>
+    </qresource>
+</RCC>

@@ -309,6 +309,72 @@ A demo showcasing the styles and interactions of the various ItemDelegate list-i
 
 ---
 
+### qml_pathview
+
+A demo showcasing how PathView arranges model items along a custom path. Includes two basic paths — a straight line and a PathQuad curve (with a control point that can be dragged in real time) — plus an alignment demo that uses a `highlight` frame and a snapping target line to show how `highlightRangeMode` and `snapMode` together decide where items settle, and a carousel built from a closed PathAngleArc circle.
+
+![QML PathView Demo](asserts/doc-images/qml-pathview.gif)
+
+---
+
+### qml_listview
+
+A demo showcasing the ListView list view in Qt Quick. Includes custom styling and scroll interaction, item click and dynamic data management, and a contact list backed by a ListModel and a C++ `QAbstractListModel` with search filtering (click a row to view details).
+
+![QML ListView Demo](asserts/doc-images/qml-listview.gif)
+
+---
+
+### qml_tableview
+
+A demo showcasing the TableView table view in Qt Quick. Includes custom header and cell styling, sorting by clicking a header, double-click cell editing, and connecting to an SQLite database for full CRUD operations.
+
+![QML TableView Demo](asserts/doc-images/qml-tableview.gif)
+
+---
+
+### qml_treeview
+
+A demo showcasing the TreeView tree view in Qt Quick. Includes a basic tree structure with expand/collapse, a fully custom delegate (file-tree style with hover and expand hints), plus hierarchical sorting and keyword search filtering that keeps parent nodes and auto-expands the results.
+
+![QML TreeView Demo](asserts/doc-images/qml-treeview.gif)
+
+---
+
+## Scrolling Feedback
+
+### qml_scrollbar
+
+A demo showcasing the ScrollBar component in Qt Quick. Includes basic scrolling inside a ScrollView and a Flickable, the ScrollIndicator, and custom scroll bar styling.
+
+![QML ScrollBar Demo](asserts/doc-images/qml-scrollbar.gif)
+
+---
+
+### qml_separator
+
+Demonstrating the various ways to write separators in Qt Quick. Includes Rectangle separators, MenuSeparator menu separators, ToolSeparator toolbar separators, and a reusable custom Divider component.
+
+![QML Separator Demo](asserts/doc-images/qml_separator.gif)
+
+---
+
+### qml_splitview
+
+A demo showcasing the draggable split-pane SplitView component in Qt Quick. Includes basic splitting with handles to resize panels, custom handle styling, nested multi-panel layouts, and persistence of split positions.
+
+![QML SplitView Demo](asserts/doc-images/qml-splitview.gif)
+
+---
+
+### qml_flickable_flipable
+
+A demo showcasing Flickable scrolling and Flipable flipping in Qt Quick. Includes basic scrolling with elastic boundary behavior, and Flipable animations such as a flipping card and a flip login form.
+
+![QML Flickable Flipable Demo](asserts/doc-images/qml_flickable_flipable.gif)
+
+---
+
 ## Animation & Effects
 
 ### qml_busyindicator

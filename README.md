@@ -310,6 +310,72 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_pathview
+
+演示 Qt Quick 中 PathView 让模型项沿自定义路径排布的用法。包含直线路径与 PathQuad 曲线路径（控制点位置可实时拖动调整）两种基础路径，一个用 `highlight` 高亮框与吸附目标线来演示 `highlightRangeMode`、`snapMode` 如何共同决定项落点的对齐示例，以及用 PathAngleArc 闭合圆路径实现的环形轮播。
+
+![QML PathView Demo](asserts/doc-images/qml-pathview.gif)
+
+---
+
+### qml_listview
+
+演示 Qt Quick 中 ListView 列表视图的用法。包含自定义样式与滚动交互、条目点击与动态数据管理，以及基于 ListModel 和 C++ `QAbstractListModel` 驱动、支持搜索过滤的联系人列表（点击查看详情）等示例。
+
+![QML ListView Demo](asserts/doc-images/qml-listview.gif)
+
+---
+
+### qml_tableview
+
+演示 Qt Quick 中 TableView 表格视图的用法。包含自定义表头与单元格样式、点击表头排序，以及双击单元格直接编辑，和连接 SQLite 数据库实现增删改查等示例。
+
+![QML TableView Demo](asserts/doc-images/qml-tableview.gif)
+
+---
+
+### qml_treeview
+
+演示 Qt Quick 中 TreeView 树形视图的用法。包含基础树结构与展开/折叠、完全自定义委托（文件树样式、悬停与展开提示），以及分层排序和按关键字搜索过滤（保留父节点、自动展开）等示例。
+
+![QML TreeView Demo](asserts/doc-images/qml-treeview.gif)
+
+---
+
+## 滚动反馈篇
+
+### qml_scrollbar
+
+演示 Qt Quick 中 ScrollBar 滚动条的用法。包含 ScrollView 与 Flickable 中的基础滚动、ScrollIndicator 滚动指示器，以及自定义滚动条样式等示例。
+
+![QML ScrollBar Demo](asserts/doc-images/qml-scrollbar.gif)
+
+---
+
+### qml_separator
+
+演示 Qt Quick 中分隔线 Separator 的多种写法。包含 Rectangle 分隔线、MenuSeparator 菜单分隔线、ToolSeparator 工具栏分隔线，以及可复用的自定义 Divider 组件等示例。
+
+![QML Separator Demo](asserts/doc-images/qml_separator.gif)
+
+---
+
+### qml_splitview
+
+演示 Qt Quick 中 SplitView 可拖拽分隔面板的用法。包含基础分割与拖拽调整尺寸、自定义 handle 手柄样式、多面板嵌套布局，以及分割位置的状态持久化等示例。
+
+![QML SplitView Demo](asserts/doc-images/qml-splitview.gif)
+
+---
+
+### qml_flickable_flipable
+
+演示 Qt Quick 中 Flickable 滚动与 Flipable 翻转的用法。包含基础滚动与边界弹性回弹、ScrollBar/Bounds 边界行为，以及翻转卡片、登录表单翻转等 Flipable 动画示例。
+
+![QML Flickable Flipable Demo](asserts/doc-images/qml_flickable_flipable.gif)
+
+---
+
 ## 动画效果篇
 
 ### qml_busyindicator

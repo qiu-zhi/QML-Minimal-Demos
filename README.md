@@ -342,6 +342,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_gridview
+
+演示 Qt Quick 中 `GridView` 网格视图的用法。包含基础网格（`model`、`delegate` 与 `cellWidth` / `cellHeight` 的配合）、`flow` 与 `layoutDirection` / `verticalLayoutDirection` 控制的排列方向、`header` / `footer` 首尾固定内容、`add` / `remove` / `displaced` 增删动画、`positionViewAtIndex` 与 `currentIndex` 驱动的动态操作，以及 `highlight` 高亮跟随等示例。
+
+![QML GridView Demo](asserts/doc-images/qml-gridview.gif)
+
+---
+
 ## 滚动反馈篇
 
 ### qml_scrollbar

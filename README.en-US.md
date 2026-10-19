@@ -341,6 +341,14 @@ A demo showcasing the TreeView tree view in Qt Quick. Includes a basic tree stru
 
 ---
 
+### qml_gridview
+
+A demo showcasing the `GridView` grid view in Qt Quick. Includes the basic grid (how `model`, `delegate`, `cellWidth` and `cellHeight` work together), the layout order controlled by `flow` along with `layoutDirection` and `verticalLayoutDirection`, fixed `header` / `footer` content, `add` / `remove` / `displaced` insert-and-remove transitions, dynamic operations driven by `positionViewAtIndex` and `currentIndex`, and `highlight` following.
+
+![QML GridView Demo](asserts/doc-images/qml-gridview.gif)
+
+---
+
 ## Scrolling Feedback
 
 ### qml_scrollbar

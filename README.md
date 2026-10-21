@@ -152,6 +152,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_styles
+
+演示 Qt Quick Controls 的样式系统。包含 Basic、Fusion、Material、Universal、Imagine、Windows 六种内置样式的切换对比，以及按钮背景、开关指示器、滑块手柄等部件的自定义示例。
+
+![QML Styles Demo](asserts/doc-images/qml-styles.gif)
+
+---
+
 ## 交互基础篇
 
 ### qml_signals

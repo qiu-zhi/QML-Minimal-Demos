@@ -151,6 +151,14 @@ A demo showcasing the `ComboBox` dropdown selection component in Qt Quick. Inclu
 
 ---
 
+### qml_styles
+
+A demo showcasing the Qt Quick Controls style system. Includes switching between the six built-in styles (Basic, Fusion, Material, Universal, Imagine, Windows), plus custom button backgrounds, switch indicators, and slider handles.
+
+![QML Styles Demo](asserts/doc-images/qml-styles.gif)
+
+---
+
 ## Interaction Basics
 
 ### qml_signals

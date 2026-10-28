@@ -13,10 +13,12 @@ Qt's official QML documentation is relatively sparse, making it easy for beginne
 
 Since 2025, I've been using my spare time to generate demo code with DeepSeek, then manually debug and fix issues — learning QML through the process of fixing bugs. The original demos were created on CSDN, and now I've iterated and optimized all of them into this collection.
 
+Column: [Qt6 QML Learning Journey](https://blog.csdn.net/u011186532/category_12883885.html)
+
 ## Environment Requirements
 
 - Minimum Qt version: 6.5
-- Current development environment: Win11 + Qt 6.8.2 / Qt 6.11.1
+- Current development environment: Win11 + Qt 6.8.3 / Qt 6.12.0
 - Note: Qt 6 programs cannot run on Win7; versions after Qt 6.12 will drop Win10 support
 
 ## Who Is This For
@@ -159,6 +161,14 @@ A demo showcasing the Qt Quick Controls style system. Includes switching between
 
 ---
 
+### qml_font
+
+A demo showcasing font loading and metrics in Qt Quick. Includes loading font files with `FontLoader` (including a failure case), querying the font Qt actually matched with `FontInfo`, and measuring font and text dimensions with `FontMetrics` and `TextMetrics`.
+
+![QML Font Demo](asserts/doc-images/qml-font.gif)
+
+---
+
 ## Interaction Basics
 
 ### qml_signals
@@ -267,19 +277,19 @@ A demo showcasing the StackView page stack in Qt Quick Controls. Includes basic 
 
 ---
 
-### qml_action_button_group
-
-A demo showcasing Action sharing and ButtonGroup in Qt Quick. Includes examples for Action reuse and shortcut binding, ButtonGroup exclusive selection, and non-exclusive multi-selection with parent-child linkage.
-
-![QML Action Button Group Demo](asserts/doc-images/qml-action-button-group.gif)
-
----
-
 ### qml_drawer
 
 A demo showcasing Drawer-based navigation in Qt Quick. Four drawers from different edges are compared on a single page: a top notification list, right-side settings (with a switch list), a bottom quick-action grid, and a left navigation drawer with a highlighted selection. All of them use `parent: Overlay.overlay` so they slide out from the window edges, and can be dismissed by clicking the scrim.
 
 ![QML Drawer Demo](asserts/doc-images/qml-drawer.gif)
+
+---
+
+### qml_action_button_group
+
+A demo showcasing Action sharing and ButtonGroup in Qt Quick. Includes examples for Action reuse and shortcut binding, ButtonGroup exclusive selection, and non-exclusive multi-selection with parent-child linkage.
+
+![QML Action Button Group Demo](asserts/doc-images/qml-action-button-group.gif)
 
 ---
 
@@ -317,14 +327,6 @@ A demo showcasing the styles and interactions of the various ItemDelegate list-i
 
 ---
 
-### qml_pathview
-
-A demo showcasing how PathView arranges model items along a custom path. Includes two basic paths — a straight line and a PathQuad curve (with a control point that can be dragged in real time) — plus an alignment demo that uses a `highlight` frame and a snapping target line to show how `highlightRangeMode` and `snapMode` together decide where items settle, and a carousel built from a closed PathAngleArc circle.
-
-![QML PathView Demo](asserts/doc-images/qml-pathview.gif)
-
----
-
 ### qml_listview
 
 A demo showcasing the ListView list view in Qt Quick. Includes custom styling and scroll interaction, item click and dynamic data management, and a contact list backed by a ListModel and a C++ `QAbstractListModel` with search filtering (click a row to view details).
@@ -346,6 +348,14 @@ A demo showcasing the TableView table view in Qt Quick. Includes custom header a
 A demo showcasing the TreeView tree view in Qt Quick. Includes a basic tree structure with expand/collapse, a fully custom delegate (file-tree style with hover and expand hints), plus hierarchical sorting and keyword search filtering that keeps parent nodes and auto-expands the results.
 
 ![QML TreeView Demo](asserts/doc-images/qml-treeview.gif)
+
+---
+
+### qml_pathview
+
+A demo showcasing how PathView arranges model items along a custom path. Includes two basic paths — a straight line and a PathQuad curve (with a control point that can be dragged in real time) — plus an alignment demo that uses a `highlight` frame and a snapping target line to show how `highlightRangeMode` and `snapMode` together decide where items settle, and a carousel built from a closed PathAngleArc circle.
+
+![QML PathView Demo](asserts/doc-images/qml-pathview.gif)
 
 ---
 

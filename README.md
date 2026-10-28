@@ -14,10 +14,12 @@ Qt 官方的 QML 文档相对稀疏，初学者容易感到迷茫。
 
 从 2025 年开始，我利用业余时间用 DeepSeek 生成 demo 代码，然后手动调试和修复问题——在修 bug 的过程中学习 QML。最初的 demo 发布在 CSDN 上，后来我逐步迭代优化，收录到这个集合中。
 
+专栏地址：[Qt6 QML学习之路](https://blog.csdn.net/u011186532/category_12883885.html)
+
 ## 环境要求
 
 - 最低 Qt 版本：6.5
-- 当前开发环境：Win11 + Qt 6.8.2 / Qt 6.11.1
+- 当前开发环境：Win11 + Qt 6.8.3 / Qt 6.12.0
 - 注意：Qt 6 程序无法在 Win7 上运行；Qt 6.12 之后的版本将不再支持 Win10
 
 ## 适用人群
@@ -160,6 +162,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_font
+
+演示 Qt Quick 中的字体加载与度量。包含 `FontLoader` 加载字体文件（含加载失败场景）、`FontInfo` 查询 Qt 实际匹配到的字体信息，以及 `FontMetrics`、`TextMetrics` 获取字体与文本的尺寸度量等示例。
+
+![QML Font Demo](asserts/doc-images/qml-font.gif)
+
+---
+
 ## 交互基础篇
 
 ### qml_signals
@@ -268,19 +278,19 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
-### qml_action_button_group
-
-演示 Qt Quick 中 Action 动作共享与 ButtonGroup 按钮组的用法。包含 Action 基础复用与快捷键绑定、ButtonGroup 单选互斥与多选父子联动等示例。
-
-![QML Action Button Group Demo](asserts/doc-images/qml-action-button-group.gif)
-
----
-
 ### qml_drawer
 
 演示 Qt Quick 中 Drawer 抽屉式导航的用法。四个方向的抽屉集中在同一页对比：顶部消息通知、右侧功能设置（含开关列表）、底部常用功能宫格、左侧导航（选中项高亮并回传），统一用 `parent: Overlay.overlay` 贴住窗口边缘滑出，并支持点击遮罩收起。
 
 ![QML Drawer Demo](asserts/doc-images/qml-drawer.gif)
+
+---
+
+### qml_action_button_group
+
+演示 Qt Quick 中 Action 动作共享与 ButtonGroup 按钮组的用法。包含 Action 基础复用与快捷键绑定、ButtonGroup 单选互斥与多选父子联动等示例。
+
+![QML Action Button Group Demo](asserts/doc-images/qml-action-button-group.gif)
 
 ---
 
@@ -318,14 +328,6 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
-### qml_pathview
-
-演示 Qt Quick 中 PathView 让模型项沿自定义路径排布的用法。包含直线路径与 PathQuad 曲线路径（控制点位置可实时拖动调整）两种基础路径，一个用 `highlight` 高亮框与吸附目标线来演示 `highlightRangeMode`、`snapMode` 如何共同决定项落点的对齐示例，以及用 PathAngleArc 闭合圆路径实现的环形轮播。
-
-![QML PathView Demo](asserts/doc-images/qml-pathview.gif)
-
----
-
 ### qml_listview
 
 演示 Qt Quick 中 ListView 列表视图的用法。包含自定义样式与滚动交互、条目点击与动态数据管理，以及基于 ListModel 和 C++ `QAbstractListModel` 驱动、支持搜索过滤的联系人列表（点击查看详情）等示例。
@@ -347,6 +349,14 @@ AI 生成的 QML 代码常出现两类问题：
 演示 Qt Quick 中 TreeView 树形视图的用法。包含基础树结构与展开/折叠、完全自定义委托（文件树样式、悬停与展开提示），以及分层排序和按关键字搜索过滤（保留父节点、自动展开）等示例。
 
 ![QML TreeView Demo](asserts/doc-images/qml-treeview.gif)
+
+---
+
+### qml_pathview
+
+演示 Qt Quick 中 PathView 让模型项沿自定义路径排布的用法。包含直线路径与 PathQuad 曲线路径（控制点位置可实时拖动调整）两种基础路径，一个用 `highlight` 高亮框与吸附目标线来演示 `highlightRangeMode`、`snapMode` 如何共同决定项落点的对齐示例，以及用 PathAngleArc 闭合圆路径实现的环形轮播。
+
+![QML PathView Demo](asserts/doc-images/qml-pathview.gif)
 
 ---
 

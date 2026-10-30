@@ -170,6 +170,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_layout_advanced
+
+演示 Qt Quick 中的布局进阶技巧。包含 `LayoutMirroring` 布局镜像（RTL 适配）、`FlexboxLayout` 弹性布局、`LayoutItemProxy` 布局项代理以及 `AnchorChanges` 锚点切换等示例。
+
+![QML Layout Advanced Demo](asserts/doc-images/qml-layout-advanced.gif)
+
+---
+
 ## 交互基础篇
 
 ### qml_signals

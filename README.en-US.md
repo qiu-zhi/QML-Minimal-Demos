@@ -169,6 +169,14 @@ A demo showcasing font loading and metrics in Qt Quick. Includes loading font fi
 
 ---
 
+### qml_layout_advanced
+
+A demo showcasing advanced layout techniques in Qt Quick. Includes `LayoutMirroring` (RTL adaptation), `FlexboxLayout`, `LayoutItemProxy`, and `AnchorChanges` examples.
+
+![QML Layout Advanced Demo](asserts/doc-images/qml-layout-advanced.gif)
+
+---
+
 ## Interaction Basics
 
 ### qml_signals

@@ -375,6 +375,14 @@ A demo showcasing the `GridView` grid view in Qt Quick. Includes the basic grid 
 
 ---
 
+### qml_delegatemodel
+
+A demo showcasing the `DelegateModel` delegate model in Qt Quick. Includes reordering the `items` group with `move` (changes display order without touching the underlying data, and the difference between the `index` and `itemsIndex` indexes), custom groups via `DelegateModelGroup` with `filterOnGroup` filtering, `Package` named parts shared by a ListView and a GridView, plus `ObjectModel` holding ready-made objects without a delegate, and `Instantiator` creating objects in bulk from a model and destroying them all at once.
+
+![QML DelegateModel Demo](asserts/doc-images/qml-delegatemodel.gif)
+
+---
+
 ## Scrolling Feedback
 
 ### qml_scrollbar

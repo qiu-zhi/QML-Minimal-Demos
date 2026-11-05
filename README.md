@@ -376,6 +376,14 @@ AI 生成的 QML 代码常出现两类问题：
 
 ---
 
+### qml_delegatemodel
+
+演示 Qt Quick 中 `DelegateModel` 委托模型的用法。包含 `items` 组的 `move` 重排（只改显示顺序、不动底层数据，`index` 与 `itemsIndex` 两套序号的区别）、`DelegateModelGroup` 自定义分组配合 `filterOnGroup` 过滤显示、`Package` 具名部件让 ListView 与 GridView 共享同一份委托，以及 `ObjectModel` 免委托收纳成品对象、`Instantiator` 按模型批量创建并整体销毁对象等示例。
+
+![QML DelegateModel Demo](asserts/doc-images/qml-delegatemodel.gif)
+
+---
+
 ## 滚动反馈篇
 
 ### qml_scrollbar
